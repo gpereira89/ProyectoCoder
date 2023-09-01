@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/favicon.jpg" type="image/jpg">
+    <title>Let´s</title>
+</head>
+<body>
+    <!-- Inicio header y barra navegación -->
+    <header class="encabezado">
+        <figure class="logo_container">
+            <img src="./img/Logo.jpg" alt="Logotipo Let´s"/>
+        </figure>
+        <div class="rrss">
+            <a href="https://instagram.com/letstravelers" class="instagram" target="_blank" >
+                <i class='bx bxl-instagram' ></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
+                <i class='bx bxl-whatsapp' ></i>
+            </a>
+        </div>
+        <nav class="navegacion">
+            <ul class="navegacion_nav">
+                <li class="nav_item">
+                    <i class='bx bxs-home'></i>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav_item">
+                    <i class='bx bxs-backpack'></i>
+                    <a href="./pages/servicios.html">Servicios</a>
+                </li>
+                <li>
+                    <i class='bx bx-book-reader'></i>
+                    <a href="./pages/guia.html">Guía viajera</a>
+                </li>
+                <li class="nav_item">
+                    <i class='bx bx-question-mark' ></i>
+                    <a href="./pages/preguntas.html">Q&A</a>
+                </li>
+                <li class="nav_item">
+                    <i class='bx bxs-phone-call'></i>
+                    <a href="./pages/contacto.html">Contacto</a>
+                </li>
+                <li id="top">
+                    <i class='bx bx-vertical-bottom'></i>
+                    <a href="#fin">Fin</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fin header y barra navegación -->
+    <main class="contenido">
+        <section class="institucional">  
+            <h1 class="titulo">LET´S</h1>
+            <p class="slogan">Time to travel</p>
+        </section>
+        <section class="reservas">
+            <video autoplay loop muted 
+                <source src="./media/puerto_madero2.mp4" type:"video/mp4" />
+            </video>
+            <div class="capa"></div>
+            <div class="form_container">
+                <h2>Reservas</h2>
+                <!-- Inicio formulario reservas -->
+                <form action="">
+                    <div class="form_control">
+                        <label for="tipo">Tipo de servicio</label>
+                        <select>
+                            <option value="opcion1" ></option>
+                            <option value="opcion2" >Traslados</option>
+                            <option value="opcion3" >Degustación cerveza artesanal</option>
+                            <option value="opcion4" >Tour gastronómico</option>
+                            <option value="opcion5" >Tour Delta del Tigre + Vicente López</option>
+                            <option value="opcion6" >Cata de vinos</option>
+                        </select>
+                    </div>
+                    <div class="form_control">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Ingrese nombre completo" id="nombre">
+                    </div>
+                    <div class="form_control">
+                        <label for="email" >Email </label>
+                        <input type="email" placeholder="Ingrese email" id="email">
+                    </div> 
+                    <div class="form_control">
+                        <label for="telefono">Teléfono de contacto</label>
+                        <input type="text" placeholder="Ingrese teléfono de contacto" id="telefono">
+                    </div> 
+                    <div class="form_control">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" placeholder="dd/mm/aaaa" id="fecha">
+                    </div>
+                    <div class="form_control">
+                        <label for="origen">Dirección origen</label>
+                        <input type="text" placeholder="Ingrese dirección origen" id="origen">
+                    </div>
+                    <div class="form_control">
+                        <label for="destino">Dirección destino</label>
+                        <input type="text" placeholder="Ingrese dirección de destino" id="destino">
+                    </div>
+                    <div class="form_control">
+                        <label for="cantidad">Cantidad de personas</label>
+                        <input type="text" placeholder="Ingrese nro. de personas" id="cantidad">
+                    </div>
+                    <div class="form_control">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea name="" id="Observaciones" cols="30" rows="10" placeholder="Observaciones"></textarea>
+                    </div>
+                    <div class="form_control">
+                        <input type="submit" value="ENVIAR">
+                        <input type="reset" value="CANCELAR">
+                    </div>
+                </form>
+            </div>
+            <!-- Fin formulario reservas -->
+        </section>
+        <!-- Inicio sección Pasos -->
+        <section class="container_pasos">
+            <div class="encabezado_pasos">
+                <h2 class="pasos" >Pasos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, magnam?</p>
+            </div>
+            <div class="icon_pasos">
+                <div class="paso_1">
+                    <div class="bandera">
+                        <i class='bx bxs-flag-checkered' ></i>
+                    </div>
+                    <h4 class="pasos">Paso Uno</h4>
+                    <p class="paso_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad quis veritatis a ducimus quaerat modi dolorem fugiat dolore dolorum.</p>
+                </div>
+                <div class="paso_2">            
+                    <div class="estrella">
+                        <i class='bx bx-star' ></i>
+                    </div>
+                    <h4 class="pasos">Paso Dos</h4>
+                    <p class="paso_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad quis veritatis a ducimus quaerat modi dolorem fugiat dolore dolorum.</p>
+                </div>
+                <div class="paso_3">            
+                    <div class="check">
+                        <i class='bx bx-check-double' ></i>
+                    </div>
+                    <h4 class="pasos">Paso Tres</h4>
+                    <p class="paso_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad quis veritatis a ducimus quaerat modi dolorem fugiat dolore dolorum.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Fin sección Pasos -->
+        <!-- Inicio sección Top Actividades -->
+        <section class="top-actividades">
+            <h2>Top Actividades</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, sapiente.</p>
+            <div class="item_carrusel">
+                <div class="imagenes_carrusel">
+                    <img src="./img/traslado_aeropuerto1.jpg" alt="Foto traslado aeropuerto">
+                    <img src="./img/tour_gastronomico1.jpg" alt="Foto tour gastronómico">
+                    <img src="./img/dia_campo1.jpg" alt="Foto día de campo">
+                    <img src="./img/cerveza_artesanal1.jpg" alt="Foto tour cerveza artesanal">
+                </div>
+            </div>
+        </section>
+        <!-- Fin sección Top Actividades -->
+        <!-- Inicio sección Beneficios -->
+        <section class="beneficios">
+            <h2>Beneficios</h2>
+                <img src="./img/confianza1.jpg" alt="Foto de confianza">
+                <img src="./img/seguridad1.jpg" alt="Foto de seguridad">
+                <img src="./img/atencion_24hs_1.jpg" alt="Foto de atención 24 hs">
+        </section>
+        <!-- Fin sección Beneficios -->
+        <!-- Inicio sección Reseñas -->
+        <section class="resenas">
+            <h2>Reseñas</h2>
+            <div class="cinco_estrellas">
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+            </div>
+            <div class="imagenes_resenas">
+                <img src="./img/ejemplo_resena.jpg" alt="Foto de Reseña">
+                <img src="./img/ejemplo_resena.jpg" alt="Foto de Reseña">
+                <img src="./img/ejemplo_resena.jpg" alt="Foto de Reseña">
+            </div>
+        </section>
+        <!-- Fin sección Reseñas -->
+        <!-- Inicio sección viajero frecuente -->
+        <section class="form_viajero">
+            <h2>Viajero frecuente</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quo?</p>
+            <form action="">
+                <div class="form_control_viajero">
+                    <label for="email">Email </label>
+                    <input type="email" placeholder="Ingrese email" id="email">
+                </div> 
+                <div class="form_control_viajero">
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" placeholder="Ingrese nombre completo" id="nombre">
+                </div>
+                <div class="form_control_submit">
+                    <input type="submit" value="SUSCRIBIRSE">
+                </div>
+            </form>
+            <!-- Fin sección viajero frecuente -->
+        </section>
+    </main>
+    <!-- Inicio de Footer -->
+    <footer>
+        <!-- Inicio barra navegación en footer -->
+        <ul class="navegacion_nav">
+            <li class="nav_item">
+                <a href="./index.html">Home</a>
+            </li>
+            <li class="nav_item">
+                <a href="./pages/servicios.html">Servicios</a>
+            </li>
+            <li>
+                <a href="./pages/guia.html">Guía viajera</a>
+            </li>
+            <li class="nav_item">
+                <a href="./pages/preguntas.html">Q&A</a>
+            </li>
+            <li class="nav_item">
+                <a href="./pages/contacto.html">Contacto</a>
+            </li>
+            <li id="fin">
+                <a href="#top">Arriba</a>
+            </li>
+        </ul>
+        <!-- Fin barra navegación en footer -->
+        <!-- Inicio pie de página -->
+        <section class="pie">
+            <span>Buenos Aires, Argentina</span>
+            &COPY;2023
+            <div class="rrss_footer">
+                <a href="https://instagram.com/letstravelers" class="instagram" target="_blank" >
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </div>  
+        </section>
+        <!-- Fin pie de página -->
+    </footer>
+    <!-- Fin de Footer -->
+    <!-- bootstrap js -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
