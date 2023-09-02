@@ -81,7 +81,7 @@ h2{
     font-size: 19px;
 }
 
-.item_carrusel img{
+.top-actividades_container img{
     width: 250px;
     height: 200px;
     border-radius: 10px 25px;
@@ -189,7 +189,7 @@ width: 400px;
     margin: 25px 15px;
 }
 
-.top-actividades img{
+.top-actividades_container img{
     margin: 25px 35px;
 }
 .beneficios img{
