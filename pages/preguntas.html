@@ -14,47 +14,64 @@
 <body>
     <!-- Inicio header y barra navegación -->
     <header class="encabezado">
-        <figure class="logo_container">
-            <a href="../index.html"><img src="../img/Logo.jpg" alt="Logotipo Let´s"/></a>
-        </figure>
-        <div class="rrss">
-            <a href="https://instagram.com/letstravelers" class="instagram" target="_blank" >
-                <i class='bx bxl-instagram' ></i>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
-                <i class='bx bxl-whatsapp' ></i>
-            </a>
-        </div>
-        <nav class="navegacion">
-            <ul class="navegacion_nav">
-                <li class="nav_item">
-                    <i class='bx bxs-home'></i>
-                    <a href="../index.html">Home</a>  
-                </li>
-                <li class="nav_item">
-                    <i class='bx bxs-backpack'></i>
-                    <a href="../pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <i class='bx bx-book-reader'></i>
-                    <a href="../pages/guia.html">Guía viajera</a>
-                </li>
-                <li class="nav_item">
-                    <i class='bx bx-question-mark' ></i>
-                    <a href="../pages/preguntas.html">Q&A</a>
-                </li>
-                <li class="nav_item">
-                    <i class='bx bxs-phone-call'></i>
-                    <a href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li id="top">
-                    <i class='bx bx-vertical-bottom'></i>
-                    <a href="#fin">Fin</a>
-                </li>
-            </ul>
+        <!-- Inicio Navbar bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(239, 248, 249);"">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <figure class="logo_container">
+                        <img src="../img/Logo.jpg" alt="Logotipo Let´s"/>
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">
+                                <i class='bx bxs-home'></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/servicios.html">
+                                <i class='bx bxs-backpack'></i> Servicios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/guia.html">
+                                <i class='bx bx-book-reader'></i> Guía viajera
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/preguntas.html">
+                                <i class='bx bx-question-mark' ></i> Q&A
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">
+                                <i class='bx bxs-phone-call'></i> Contacto
+                            </a>
+                        </li>
+                        <li id="top">
+                            <a class="nav-link active" aria-current="page" href="#fin">
+                                <i class='bx bx-vertical-bottom'></i> Fin
+                            </a>
+                        </li>
+                    </ul>   
+                    <div class="rrss">
+                        <a href="https://instagram.com/letstravelers" class="instagram" target="_blank" >
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
+                            <i class='bx bxl-whatsapp' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </nav>
+        <!-- Fin Navbar bootstrap -->
     </header>
-    <!-- Fin header y barra navegación -->
+    <!-- Fin header -->
     <!-- Inicio Main -->
     <main class="contenido">
         <section class="nombre_pag">
