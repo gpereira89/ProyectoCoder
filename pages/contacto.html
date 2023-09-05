@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Custom styles -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/jpg">
     <link rel="stylesheet" href="../css/style.css">
@@ -52,8 +55,122 @@
         </nav>
     </header>
     <!-- Fin header y barra navegación -->
+    <!-- Inicia Main -->
     <main class="contenido">
-        <h1>Contacto</h1>
+        <section class="nombre_pag">
+            <h1>Contacto</h1>
+        </section>
+        <!-- Inicia sección Contactanos -->
+        <section class="contactanos">
+            <div class="form_container_contacto">
+                <h3>Dejá tu consulta en el siguiente formulario</h3>
+                <!-- Inicio formulario contacto -->
+                <form action="">
+                    <div class="form_control">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Ingrese nombre y apellido" id="nombre">
+                    </div>
+                    <div class="form_control">
+                        <label for="email" >Email </label>
+                        <input type="email" placeholder="Ingrese email" id="email">
+                    </div> 
+                    <div class="form_control">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" placeholder="Ingrese número de teléfono" id="telefono">
+                    </div> 
+                    <div class="form_control">
+                        <label for="observaciones">Observaciones</label>
+                        <textarea name="" id="Observaciones" cols="60" rows="10"placeholder="Deja tu mensaje"></textarea>
+                    </div>
+                    <div class="form_control">
+                        <input type="submit" value="ENVIAR">
+                        <input type="reset" value="CANCELAR">
+                    </div>
+                </form>
+            </div>
+            <!-- Fin formulario contacto -->
+        </section>
+        <!-- Fin sección Contactanos -->
+        <!-- Inicia sección dudas -->
+        <section class="dudas">
+            <section class="preguntas">
+                <h2>Resolvé tus dudas en nuestra sección
+                    <div class="boton_preguntas"> 
+                        <a href="../pages/preguntas.html">
+                            <button type="button" class="btn btn-secondary">Q&A</button>
+                        </a>
+                    </div>
+                </h2>
+            </section>
+            <section class="redes">
+                <section class="redes_texto">
+                    <h2>Visita nuestras Redes Sociales para enterarte de todas las novedades</h2>
+                </section>
+                <a href="https://instagram.com/letstravelers" class="instagram" target="_blank" >
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </section>
+        </section>
+        <!-- Fin sección dudas -->
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h5 class="text-white h4">Collapsed content</h5>
+              <span class="text-muted">Toggleable via the navbar brand.</span>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
     </main>
+    <!-- Fin Main -->
+    <!-- Inicio de Footer -->
+    <footer>
+        <!-- Inicio barra navegación en footer -->
+        <ul class="navegacion_nav">
+            <li class="nav_item">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="nav_item">
+                <a href="../pages/servicios.html">Servicios</a>
+            </li>
+            <li>
+                <a href="../pages/guia.html">Guía viajera</a>
+            </li>
+            <li class="nav_item">
+                <a href="../pages/preguntas.html">Q&A</a>
+            </li>
+            <li class="nav_item">
+                <a href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li id="fin">
+                <a href="#top">Arriba</a>
+            </li>
+        </ul>
+        <!-- Fin barra navegación en footer -->
+        <!-- Inicio pie de página -->
+        <section class="pie">
+            <span>Buenos Aires, Argentina</span>
+            &COPY;2023
+            <div class="rrss_footer">
+                <a href="https://instagram.com/letstravelers" class="instagram" target="_blank" >
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </div>  
+        </section>
+        <!-- Fin pie de página -->
+    </footer>
+    <!-- Fin de Footer -->
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

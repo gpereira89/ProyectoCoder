@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Custom styles -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="../img/favicon.jpg" type="image/jpg">
     <link rel="stylesheet" href="../css/style.css">
@@ -52,8 +55,199 @@
         </nav>
     </header>
     <!-- Fin header y barra navegación -->
+    <!-- Inicio Main -->
     <main class="contenido">
-        <h1>Q&A - Preguntas y respuestas</h1>
+        <section class="nombre_pag">
+            <h1>Q&A - Preguntas y respuestas</h1>
+        </section>
+        <!-- Inicia sección preguntas y respuestas -->
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        ¿Qué servicios ofrece su empresa de traslados y tours en Buenos Aires?
+                    </button>
+                </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                        Se ofrecen servicios de traslados privados desde y hacia los aeropuertos de Ezeiza y Aeroparque, además de diferentes tours por la ciudad que en LET´S hemos preparado para ti.
+                    </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        ¿Se pueden realizar tours personalizados distintos a los ya armados?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        En LET´S queremos hacer de tu experiencia en la Ciudad la mejor, por lo que podés elegir entre las opciones que te ofrecemos en la sección de <a href="../pages/servicios.html">Actividades/Servicios.</a>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        ¿Cuáles son las ventajas de elegir un traslado privado en lugar de un taxi convencional?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Desde LET´S te ofrecemos un servicio de calidad, 100% garantizado, puntual, seguro y con atención personalizada en todo momento. Vas a poder dedicarte a disfrutar, mientras que de tu traslado y seguridad nos encargamos nosotros.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        ¿Cómo puedo reservar un traslado o tour?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Podés completar tu reserva desde nuestro <a href="../index.html">formulario</a>, o través de nuestro <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">Whatsapp</a> para recibir atención personalizada.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                        ¿Ofrecen descuentos para grupos o reservas anticipadas?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Desde LET´S fomentamos los viajes en familia para mayor disfrute, por lo que ofrecemos paquetes exclusivos para grupos. También ofrecemos descuentos especiales para reservas anticipadas.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                        ¿Puedo personalizar mi traslado privado con paradas adicionales?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Totalmente. En LET´S nos adaptamos a buscar las mejores opciones de acuerdo a tus necesidades, por lo que estamos siempre dispuestos a los requerimientos de nuestros clientes.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                        ¿Qué destinos y lugares de interés visitan en sus tours?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Podés visitar nuestra sección <a href="../pages/servicios.html">Servicios/Actividades</a> para conocer y disfrutar de todo lo que vas a poder hacer con LET´S.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEighth" aria-expanded="false" aria-controls="panelsStayOpen-collapseEighth">
+                        ¿Cuál es la política de cancelación y reembolso de su empresa?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseEighth" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Si tu cancelación se realiza una semana antes del día pactado para el servicio, te reembolsaremos el 100% de lo pagado, si se realiza hasta 3 días antes el 50%. De lo contrario no podremos reembolsar nada.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                        ¿Cómo puedo ponerme en contacto con su empresa en caso de preguntas o problemas durante mi viaje?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        A través de nuestras redes sociales. Específicamente a través de nuestro Whatsapp vas a poder atender atención personalizada las 24 hrs.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                        ¿Tienen recomendaciones adicionales para mi viaje a Buenos Aires?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        Por supuesto que si. Con LET´S vas a poder encontrar recomendaciones adicionales para conocer y visitar tanto en Buenos Aires como en el resto de Argentina. Visitá nuestra sección <a href="../pages/guia.html">Guía</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin sección preguntas y respuestas -->
+        <!-- Inicia sección contacto -->
+        <section class="contacto">
+            <article class="contacto_web">
+                <p>¿Después de revisar nuestra sección Q&A tus dudas o consultas no fueron resueltas?</p>
+                <div class="boton">
+                    <a href="../pages/contacto.html">
+                        <button type="button" class="btn btn-secondary">CONTACTANOS</button>
+                    </a>
+                </div>
+            </article>
+            <article class="contacto_whatsapp">
+                <p>O escribe a nuestro Whatsapp y tendrás atención personalizada</p>
+                <div class="boton_whatsapp_contacto">
+                    <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </a>
+                </div>
+            </article>
+        </section>
+        <!-- Fin sección contacto -->
+
     </main>
+    <!-- Fin Main -->
+    <!-- Inicio de Footer -->
+    <footer>
+        <!-- Inicio barra navegación en footer -->
+        <ul class="navegacion_nav">
+            <li class="nav_item">
+                <a href="../index.html">Home</a>
+            </li>
+            <li class="nav_item">
+                <a href="../pages/servicios.html">Servicios</a>
+            </li>
+            <li>
+                <a href="../pages/guia.html">Guía viajera</a>
+            </li>
+            <li class="nav_item">
+                <a href="../pages/preguntas.html">Q&A</a>
+            </li>
+            <li class="nav_item">
+                <a href="../pages/contacto.html">Contacto</a>
+            </li>
+            <li id="fin">
+                <a href="#top">Arriba</a>
+            </li>
+        </ul>
+        <!-- Fin barra navegación en footer -->
+        <!-- Inicio pie de página -->
+        <section class="pie">
+            <span>Buenos Aires, Argentina</span>
+            &COPY;2023
+            <div class="rrss_footer">
+                <a href="https://instagram.com/letstravelers" class="instagram" target="_blank" >
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
+                    <i class='bx bxl-whatsapp' ></i>
+                </a>
+            </div>  
+        </section>
+        <!-- Fin pie de página -->
+    </footer>
+    <!-- Fin de Footer -->
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

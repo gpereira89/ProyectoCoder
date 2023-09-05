@@ -16,57 +16,75 @@
 <body>
     <!-- Inicio header y barra navegación -->
     <header class="encabezado">
-        <figure class="logo_container">
-            <a href="./index.html"><img src="./img/Logo.jpg" alt="Logotipo Let´s"/></a>
-        </figure>
-        <div class="rrss">
-            <a href="https://instagram.com/letstravelers" class="instagram" target="_blank" >
-                <i class='bx bxl-instagram' ></i>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
-                <i class='bx bxl-whatsapp' ></i>
-            </a>
-        </div>
-        <nav class="navegacion">
-            <ul class="navegacion_nav">
-                <li class="nav_item">
-                    <i class='bx bxs-home'></i>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="nav_item">
-                    <i class='bx bxs-backpack'></i>
-                    <a href="./pages/servicios.html">Servicios</a>
-                </li>
-                <li>
-                    <i class='bx bx-book-reader'></i>
-                    <a href="./pages/guia.html">Guía viajera</a>
-                </li>
-                <li class="nav_item">
-                    <i class='bx bx-question-mark' ></i>
-                    <a href="./pages/preguntas.html">Q&A</a>
-                </li>
-                <li class="nav_item">
-                    <i class='bx bxs-phone-call'></i>
-                    <a href="./pages/contacto.html">Contacto</a>
-                </li>
-                <li id="top">
-                    <i class='bx bx-vertical-bottom'></i>
-                    <a href="#fin">Fin</a>
-                </li>
-            </ul>
+        <!-- Inicio Navbar bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(239, 248, 249);"">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <figure class="logo_container">
+                        <img src="./img/Logo.jpg" alt="Logotipo Let´s"/>
+                    </figure>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-1 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">
+                                <i class='bx bxs-home'></i> Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/servicios.html">
+                                <i class='bx bxs-backpack'></i> Servicios
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/guia.html">
+                                <i class='bx bx-book-reader'></i> Guía viajera
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/preguntas.html">
+                                <i class='bx bx-question-mark' ></i> Q&A
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/contacto.html">
+                                <i class='bx bxs-phone-call'></i> Contacto
+                            </a>
+                        </li>
+                        <li id="top">
+                            <a class="nav-link active" aria-current="page" href="#fin">
+                                <i class='bx bx-vertical-bottom'></i> Fin
+                            </a>
+                        </li>
+                    </ul>   
+                    <div class="rrss">
+                        <a href="https://instagram.com/letstravelers" class="instagram" target="_blank" >
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5491141462378" class="whatsapp" target="_blank">
+                            <i class='bx bxl-whatsapp' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </nav>
+        <!-- Fin Navbar bootstrap -->
     </header>
-    <!-- Fin header y barra navegación -->
+    <!-- Fin header -->
     <main class="contenido">
         <section class="institucional">  
-            <h1 class="titulo">LET´S</h1>
-            <p class="slogan">Time to travel</p>
+            <h1 class="titulo">LET´S - Time to travel</h1>
+            <h2 class="slogan">Atrevete a disfrutar la experiencia para conocer Buenos Aires</h2>
         </section>
+        
         <section class="reservas">
             <video autoplay loop muted 
                 <source src="./media/puerto_madero2.mp4" type:"video/mp4" />
             </video>
-            <div class="capa"></div>
+            <!-- <div class="capa"></div> -->
             <div class="form_container">
                 <h2>Reservas</h2>
                 <!-- Inicio formulario reservas -->
@@ -99,6 +117,10 @@
                         <input type="date" placeholder="dd/mm/aaaa" id="fecha">
                     </div>
                     <div class="form_control">
+                        <label for="time">Hora</label>
+                        <input type="time" placeholder="00:00" id="time">
+                    </div>
+                    <div class="form_control">
                         <label for="origen">Dirección origen</label>
                         <input type="text" placeholder="Ingrese dirección origen" id="origen">
                     </div>
@@ -112,11 +134,11 @@
                     </div>
                     <div class="form_control">
                         <label for="observaciones">Observaciones</label>
-                        <textarea name="" id="Observaciones" cols="30" rows="10" placeholder="Observaciones"></textarea>
+                        <textarea id="Observaciones" placeholder="Observaciones"></textarea>
                     </div>
                     <div class="form_control">
-                        <input type="submit" value="ENVIAR">
-                        <input type="reset" value="CANCELAR">
+                        <input class="boton-submit" type="submit" value="ENVIAR">
+                        <input class="boton-submit" type="reset" value="CANCELAR">
                     </div>
                 </form>
             </div>
@@ -126,7 +148,6 @@
         <section class="container_pasos">
             <div class="encabezado_pasos">
                 <h2 class="pasos" >Pasos</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, magnam?</p>
             </div>
             <div class="icon_pasos">
                 <div class="paso_1">
@@ -134,21 +155,21 @@
                         <i class='bx bxs-flag-checkered' ></i>
                     </div>
                     <h4 class="pasos">Paso Uno</h4>
-                    <p class="paso_1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad quis veritatis a ducimus quaerat modi dolorem fugiat dolore dolorum.</p>
+                    <p class="paso_1">Revisa nuestra sección Servicios y conoce todas las opciones que tenemos para ti</p>
                 </div>
                 <div class="paso_2">            
                     <div class="estrella">
                         <i class='bx bx-star' ></i>
                     </div>
                     <h4 class="pasos">Paso Dos</h4>
-                    <p class="paso_2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad quis veritatis a ducimus quaerat modi dolorem fugiat dolore dolorum.</p>
+                    <p class="paso_2">Rellena el formulario de Reserva completando todos los campos </p>
                 </div>
                 <div class="paso_3">            
                     <div class="check">
                         <i class='bx bx-check-double' ></i>
                     </div>
                     <h4 class="pasos">Paso Tres</h4>
-                    <p class="paso_3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ad quis veritatis a ducimus quaerat modi dolorem fugiat dolore dolorum.</p>
+                    <p class="paso_3">Relajate y disfruta. En LET´S estás en buenas manos</p>
                 </div>
             </div>
         </section>
@@ -156,10 +177,10 @@
         <!-- Inicio sección Top Actividades -->
         <section class="top-actividades">
             <h2>Top Actividades</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, sapiente.</p>
+            <p>Estas son algunas de las principales actividades/Servicios recomendados para ti</p>
             <section class="top-actividades_container">
                 <div class="card">
-                    <img src="./img/traslado_aeropuerto.jpg" alt="Foto traslado aeropuerto"/>
+                    <img src="./img/traslado_aeropuerto.jpg" alt="Foto traslado aeropuerto" class="card_img"/>
                     <div class="card_title">
                         <h4>Traslados desde y hacia aeropuertos</h4>
                     </div>
@@ -169,7 +190,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./img/tour_gastronomico.jpg" alt="Foto tour gastronómico"/>
+                    <img src="./img/tour_gastronomico.jpg" alt="Foto tour gastronómico" class="card_img"/>
                     <div class="card_title">
                         <h4>Tour Gastronómico</h4>
                     </div>
@@ -179,7 +200,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./img/dia_campo.jpg" alt="Foto día de campo"/>
+                    <img src="./img/dia_campo.jpg" alt="Foto día de campo" class="card_img"/>
                     <div class="card_title">
                         <h4>Día de campo</h4>
                     </div>
@@ -190,7 +211,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./img/cerveza_artesanal.jpg" alt="Foto tour cerveza artesanal"/>
+                    <img src="./img/cerveza_artesanal.jpg" alt="Foto tour cerveza artesanal" class="card_img"/>
                     <div class="card_title">
                         <h4>Tour degustación de Cerveza artesanal</h4>
                     </div>
@@ -205,9 +226,26 @@
         <!-- Inicio sección Beneficios -->
         <section class="beneficios">
             <h2>Beneficios</h2>
-                <img src="./img/confianza1.jpg" alt="Foto de confianza">
-                <img src="./img/seguridad1.jpg" alt="Foto de seguridad">
-                <img src="./img/atencion_24hs_1.jpg" alt="Foto de atención 24 hs">
+            <section class="beneficios_container">
+                <div class="card_beneficios">
+                    <img src="./img/confianza.jpg" alt="Foto de confianza" class="beneficios_img"/>
+                    <div class="card_title">
+                        <h5>Confianza</h5>
+                    </div>
+                </div>
+                <div class="card_beneficios">
+                    <img src="./img/seguridad.jpg" alt="Foto de seguridad" class="beneficios_img"/>
+                    <div class="card_title">
+                        <h5>Seguridad</h5>
+                    </div>
+                </div>
+                <div class="card_beneficios">
+                    <img src="./img/atencion_24hs.jpg" alt="Foto de atención 24 hs" class="beneficios_img"/>
+                    <div class="card_title">
+                        <h5>Atención personalizada en todo momento</h5>
+                    </div>
+                </div>
+            </section>
         </section>
         <!-- Fin sección Beneficios -->
         <!-- Inicio sección Reseñas -->
@@ -221,29 +259,31 @@
                 <i class='bx bxs-star' ></i>
             </div>
             <div class="imagenes_resenas">
-                <img src="./img/ejemplo_resena.jpg" alt="Foto de Reseña">
-                <img src="./img/ejemplo_resena.jpg" alt="Foto de Reseña">
-                <img src="./img/ejemplo_resena.jpg" alt="Foto de Reseña">
+                <img src="./img/reseña1.png" alt="Foto de Reseña 1">
+                <img src="./img/reseña2.png" alt="Foto de Reseña 2">
+                <img src="./img/reseña3.png" alt="Foto de Reseña 3">
             </div>
         </section>
         <!-- Fin sección Reseñas -->
         <!-- Inicio sección viajero frecuente -->
         <section class="form_viajero">
             <h2>Viajero frecuente</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, quo?</p>
-            <form action="">
-                <div class="form_control_viajero">
-                    <label for="email">Email </label>
-                    <input type="email" placeholder="Ingrese email" id="email">
-                </div> 
-                <div class="form_control_viajero">
-                    <label for="nombre">Nombre completo</label>
-                    <input type="text" placeholder="Ingrese nombre completo" id="nombre">
-                </div>
-                <div class="form_control_submit">
-                    <input type="submit" value="SUSCRIBIRSE">
-                </div>
-            </form>
+            <p>Dejanos tus datos para que te enteres de las novedades que siempre buscamos para vos</p>
+            <section class="viajero_frecuente">
+                <form action="">
+                    <div class="form_control_viajero">
+                        <label for="email">Email </label>
+                        <input type="email" placeholder="Ingrese email" id="email">
+                    </div> 
+                    <div class="form_control_viajero">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" placeholder="Ingrese nombre completo" id="nombre">
+                    </div>
+                    <div class="form_control_submit">
+                        <input type="submit" value="SUSCRIBIRSE">
+                    </div>
+                </form>
+            </section>
             <!-- Fin sección viajero frecuente -->
         </section>
     </main>
@@ -257,7 +297,7 @@
             <li class="nav_item">
                 <a href="./pages/servicios.html">Servicios</a>
             </li>
-            <li>
+            <li class="nav-item">
                 <a href="./pages/guia.html">Guía viajera</a>
             </li>
             <li class="nav_item">
