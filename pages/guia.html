@@ -15,7 +15,7 @@
     <!-- Inicio header y barra navegación -->
     <header class="encabezado">
         <!-- Inicio Navbar bootstrap -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(239, 248, 249);"">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../index.html">
                     <figure class="logo_container">
@@ -77,58 +77,65 @@
         <section class="nombre_pag">
             <h1>Guía viajera de Argentina</h1>
         </section>
-        <!-- Inicia sección Imperdibles -->
+        <!-- Inicia sección Imperdibles con carrusel -->
         <section class="imperdibles">
-            <h2>Imperdibles</h2>
-            <section class="imperdibles_container">
-                <div class="card">
-                    <img src="../img/tango-show.jpg" alt="Foto tango show" class="card_img">
-                    <div class="card_title">
-                        <h5>Disfrutar de un espectáculo de tango en Buenos Aires</h5>    
+            <h2>Imperdibles</h2>        
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/tango-show.jpg" class="d-block w-100" alt="Foto tango show">
+                        <div class="carousel-caption">
+                            <h5>Disfrutar de un espectáculo de tango en Buenos Aires</h5>
+                            <p>El tango es una parte fundamental de la cultura argentina, y no hay mejor lugar para experimentarlo que en su lugar de origen, Buenos Aires. Puedes asistir a una cena-show de tango o visitar una milonga local para ver a los bailarines de tango en acción</p>
+                        </div>
                     </div>
-                    <div class="card_container">
-                        <p>El tango es una parte fundamental de la cultura argentina, y no hay mejor lugar para experimentarlo que en su lugar de origen, Buenos Aires. Puedes asistir a una cena-show de tango o visitar una milonga local para ver a los bailarines de tango en acción</p>
+                    <div class="carousel-item">
+                        <img src="../img/iguazu.jpg" class="d-block w-100" alt="foto cataratas Iguazú">
+                        <div class="carousel-caption">
+                            <h5>Visitar las Cataratas del Iguazú</h5>
+                            <p>Estas majestuosas cascadas en la frontera con Brasil son una maravilla natural que no te puedes perder. Puedes explorar los senderos y pasarelas que te llevan muy cerca de las cascadas, lo que brinda una experiencia inolvidable</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/carne_vino1.jpg" class="d-block w-100" alt="foto de carne y vino">
+                        <div class="carousel-caption">
+                            <h5>Degustar un delicioso asado argentino</h5>
+                            <p>Argentina es famosa por su carne de alta calidad y su tradición de asados. No te pierdas la oportunidad de probar un delicioso bife de chorizo o costillas a la parrilla en uno de los restaurantes locales</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/vinedos_mendoza.jpg" class="d-block w-100" alt="Foto viñedos Mendoza">
+                        <div class="carousel-caption">
+                            <h5>Explorar la región vinícola de Mendoza</h5>
+                            <p>Mendoza es conocida por ser el centro de la producción de vino en Argentina. Puedes realizar degustaciones de vino en las numerosas bodegas de la región y disfrutar de hermosos paisajes de viñedos y montañas</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../img/patagonia.jpg" class="d-block w-100" alt="Foto de la Patagonia">
+                        <div class="carousel-caption">
+                            <h5>Recorrer la Patagonia</h5>
+                            <p>Ya sea que prefieras hacer senderismo en el Parque Nacional Los Glaciares, explorar la Tierra del Fuego o simplemente disfrutar de la belleza natural de la región, la Patagonia argentina es un destino imperdible para los amantes de la naturaleza y la aventura</p>
+                        </div>
                     </div>
                 </div>
-                <div class="card">
-                    <img src="../img/cataratas_iguazu.jpg" alt="Foto cataratas Iguazú" class="card_img">
-                    <div class="card_title">
-                        <h5>Visitar las Cataratas del Iguazú</h5>    
-                    </div>
-                    <div class="card_container">
-                        <p>Estas majestuosas cascadas en la frontera con Brasil son una maravilla natural que no te puedes perder. Puedes explorar los senderos y pasarelas que te llevan muy cerca de las cascadas, lo que brinda una experiencia inolvidable</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/carne_vino.jpg" alt="Foto de carne y vino" class="card_img">
-                    <div class="card_title">
-                        <h5>Degustar un delicioso asado argentino</h5>    
-                    </div>
-                    <div class="card_container">
-                        <p>Argentina es famosa por su carne de alta calidad y su tradición de asados. No te pierdas la oportunidad de probar un delicioso bife de chorizo o costillas a la parrilla en uno de los restaurantes locales</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/vinedos_mendoza.jpg" alt="Foto viñedo Mendoza" class="card_img">
-                    <div class="card_title">
-                        <h5>Explorar la región vinícola de Mendoza</h5>    
-                    </div>
-                    <div class="card_container">
-                        <p>Mendoza es conocida por ser el centro de la producción de vino en Argentina. Puedes realizar degustaciones de vino en las numerosas bodegas de la región y disfrutar de hermosos paisajes de viñedos y montañas</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="../img/patagonia.jpg" alt="Foto de la patagonia" class="card_img">
-                    <div class="card_title">
-                        <h5>Recorrer la Patagonia</h5>    
-                    </div>
-                    <div class="card_container">
-                        <p>Ya sea que prefieras hacer senderismo en el Parque Nacional Los Glaciares, explorar la Tierra del Fuego o simplemente disfrutar de la belleza natural de la región, la Patagonia argentina es un destino imperdible para los amantes de la naturaleza y la aventura</p>
-                    </div>
-                </div>
-            </section>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button   button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
-        <!-- Fin sección Imperdibles -->
+        <!-- Fin Imperdibles con carrusel -->
         <!-- Inicia sección Recomendados -->
         <section class="recomendados">
             <h2>Recomendados</h2>
@@ -146,7 +153,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../img/iguazu.jpg" alt="Foto cataratas Iguazú de lejos" class="card_img"/>
+                    <img src="../img/cataratas_iguazu1.jpg" alt="Foto cataratas Iguazú de lejos" class="card_img"/>
                     <div class="card_title">
                         <h4>Iguazú</h4>
                     </div>
@@ -257,10 +264,13 @@
         <!-- Inicia sección link a formulario -->
         <section class="embudo">
             <article class="texto_embudo">
-                <p>Reservá tus experiencias en Buenos Aires con LET´S</p>
+                <h2>Reserva con LET´S tu traslado o tour personalizado 100% confiable y de manera super fácil</h2>
             </article>
             <article class="boton_reserva">
-                <a href="../index.html" class="boton">Reserva aquí</a>
+                <a href="../index.html">
+                    <button type="button" class="btn btn-secondary">Reserva aquí</button>
+                </a>
+            </article>
         </section>
         <!-- Fin sección link a formulario -->
     </main>
