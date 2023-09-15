@@ -473,11 +473,8 @@ color:gold;
 
 /* Estilos sección footer */
 .pie{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    left: 500px;
 }
 
 .rrss_footer{
