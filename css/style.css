@@ -670,7 +670,7 @@ transform: scale(1.2);
 
 
 .card_galeria img{
-    width: 400px;
+    width: 350px;
     height: 300px;
 }
 
@@ -1487,6 +1487,9 @@ transform: scale(1.2);
     }
     .paso_1, .paso_2, .paso_3{
         width: 60%;
+    }
+    .reservas .form_container{
+        width: 100%;
     }
 }
 
