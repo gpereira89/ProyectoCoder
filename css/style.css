@@ -606,6 +606,10 @@ transform: scale(1.2);
     display: grid;
 }
 
+.imagenes_turisticas{
+    padding: 15px;
+}
+
 .contenido_servicios h1{ 
     font-size: 30px;
     font-family:"Jingle Star", cursive;
@@ -1115,6 +1119,7 @@ transform: scale(1.2);
         width: 100%;
         display: flex;
         justify-content: center;
+        overflow-x: scroll;
     }
     .actividades{
         padding: 15px;
@@ -1332,7 +1337,7 @@ transform: scale(1.2);
     }
 
     .card_galeria{
-        width: 350px;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1347,6 +1352,11 @@ transform: scale(1.2);
     .card_galeria h4{
         width: 100%;
     }
+    .card_galeria p{
+        width: 100%;
+        overflow-x: scroll;
+    }
+
     .form_control_viajero input{
         width: 350px;
     }
@@ -1490,6 +1500,10 @@ transform: scale(1.2);
     }
     .reservas .form_container{
         width: 100%;
+    }
+    .reservas{
+        width: 95%;
+        margin: 10px;
     }
 }
 
