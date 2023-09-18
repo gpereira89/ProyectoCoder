@@ -1519,13 +1519,13 @@ transform: scale(1.2);
 
 @media (min-width:550px) and (max-width:742px){
     .card_galeria{
-        padding-left:16%;
+        padding-left:16px;
     }
 }
 
 @media (min-width:481px) and (max-width:550px){
     .card_galeria{
-        padding-left: 9%;
+        padding-left: 9px;
     }
 }
 
