@@ -1,0 +1,447 @@
+/* Media queries */
+
+@media (max-width:1100px){
+    .encabezado .navbar-collapse li{
+        padding: 10px;
+    }
+
+    .resenas .imagenes_resenas{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .reservas .form_container{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+        top:10%;
+        left: 10%;
+    }
+    .reservas{
+        height: auto;
+    }
+
+    .embudo h2{
+        font-size: xx-large;
+    }
+    .embudo{
+        height: 400px;
+    }
+    .embudo .boton_reserva button{
+        font-size: xx-large;
+    }
+    .card_beneficios{
+        width: 85%;
+    }
+    .contactanos{
+        padding: 15px;
+    }
+    .dudas{
+        padding: 15px;
+    }
+}
+
+@media (max-width:992px){
+    .encabezado .navbar-collapse li{
+        padding: 5px;
+    }
+    .carousel-inner img{
+        height: 600px;
+    }
+    .videos_container{
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 15px;
+    }
+    .lugares iframe{
+        width: 90%;
+    }
+    .recomendados_container{
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 20px;
+    }
+}
+
+@media (max-width:850px){
+    .actividades_container{
+        grid-template-columns: repeat(2,1fr);
+        padding: 15px;
+        margin-left: 0;
+    }
+    .actividades h2{
+        justify-content: center;
+    }
+
+    .actividades p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .actividades{
+        padding: 15px;
+    }
+    .imagenes_turisticas h2{
+        justify-content: center;
+    }
+    
+    .imagenes_turisticas p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        overflow-x: scroll;
+    }
+    .actividades{
+        padding: 15px;
+    }
+    .beneficios h2{
+        justify-content: center;
+    }
+    .recomendados{
+        place-items: center;
+    }
+    .imperdibles{
+        place-items: center;
+        padding-top: 15px;
+    }
+    .lugares{
+        place-items: center;
+    }
+    .reservas .form_container{
+        width: 90%;
+    }
+    .container_pasos .encabezado_pasos h2{
+        justify-content: center;
+    }
+    .top-actividades h2{
+        justify-content: center;
+    }
+    .top-actividades p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .beneficios h2{
+        place-items: center;
+    }
+    .resenas h2{
+        justify-content: center;
+    }
+    .form_viajero h2{
+        justify-content: center;
+    }
+    .form_viajero p{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .top-actividades .top-actividades_container{
+        grid-template-columns: repeat(2,1fr);
+        padding: 15px;
+        margin-left: 0;
+        gap: 20px;
+    }
+    .institucional{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px){
+    .contenido .slogan{
+        font-size: medium;
+    }
+
+    .contenido h1{
+        font-size: 25px;
+    }
+    .contenido h2{
+        font-size: 20px;
+    }
+    .reservas .form_container{
+        // display: flex;
+        // flex-direction: column;
+        width: auto;
+        // height: auto;
+        // top:10%;
+        left: 5%;
+    }
+    .reservas{
+        width: auto;
+    }
+
+    .container_pasos .icon_pasos{
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3{
+        width: 50%;
+        height: 150px;
+        padding: 5px;
+    }
+    .beneficios .beneficios_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .beneficios .card_beneficios{
+        width: 40%;
+    }
+
+    .card_beneficios img{
+        width: 65%;
+        height: 150px;
+    }
+
+    .resena .imagenes_resenas{
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .navegacion_nav{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+    .pie{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+    }
+    
+    .contacto_web{
+        flex-direction: column;
+        gap:0;
+        align-items: center;
+        justify-content: center;
+    }
+    .boton_whatsapp_contacto i{
+        font-size: xxx-large;
+        margin-bottom: 10px;
+    }
+    .contacto p{
+        padding-bottom: 5px;
+    }
+
+    .contacto{
+        padding-bottom: 10px;
+    }
+    .contacto_whatsapp{
+        flex-direction: column;
+        padding: 0;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .carousel-inner p{
+        font-size:small;
+    }
+    .recomendados_container{
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        gap: 20px;
+    }
+      
+    .videos_container{
+        place-items: center;
+    }
+
+    .lugares iframe{
+        width: auto;
+    }
+
+    .contactanos{
+        width: auto;
+        
+    }
+    .form_container_contacto{
+        width: auto;
+        padding: 15px;
+    }  
+
+    .form_control_contacto{
+        width: 100%;
+    }
+
+    .form_control_contacto label{
+        width: 100%;
+    }
+
+    .form_control_contacto input[type="text"]{
+        width: 100%;
+    }
+    
+    .form_control_contacto input[type="email"]{
+        width: 100%;
+    }
+    
+    #observaciones_contacto{
+        width: 100%;
+    }
+
+    .preguntas h2{
+        font-size: large;
+    }
+
+    .redes_texto h2{
+        font-size: medium;
+    }
+
+    .contactanos h3{
+        font-size: large;
+    }
+
+    .form_viajero .viajero_frecuente .form_control_viajero input{
+        width: 350px;
+    }
+    .form_viajero .viajero_frecuente .form_control_viajero label{
+        font-size: small;
+    }
+}
+
+@media (max-width:645px){
+    .videos_container{
+        grid-template-columns: 1fr;
+    }
+    .reservas .form_container form .form_control label{
+        width: 100%;
+        font-size: medium;
+    }
+}
+
+@media (max-width:600px){
+    .embudo h2{
+        font-size: large;
+        padding-top: 30px;
+    }
+    .embudo{
+        height: 300px;
+        justify-content: start;
+    }
+    .embudo .boton_reserva button{
+        font-size: x-large;
+    }
+
+    .beneficios .card_beneficios{
+        width: 45%;
+    }
+
+    .card_beneficios img{
+        width: 65%;
+        height: 120px;
+    }
+    .recomendados_container{
+        grid-template-columns: 1fr;
+    }
+    .reservas #observaciones{
+        width: 300px;
+    }
+    .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3{
+        width: 50%;
+        height: 170px;
+        padding: 5px;
+    }
+    .top-actividades .top-actividades_container{
+        padding: 0px;
+        gap: 10px;
+    }
+    .form_control_viajero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:480px){
+    .top-actividades .top-actividades_container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+    .reservas .form_container form{
+        font-weight: 500; 
+        padding: 5px;
+    }
+    .reservas .form_container textarea{
+        width: 250px;
+        height: 80px;
+    }
+        
+    .form_container_contacto{
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }  
+    .form_container_contacto{
+        width: auto;
+    }
+    .actividades_container{
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .carousel-inner img{
+        height: 500px;
+    }
+    .carousel-inner h5{
+        font-size:medium;
+    }
+    
+    .carousel-inner p{
+        font-size:small;
+        font-weight: 500;
+    }
+    .recomendados_container{
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 20px;
+    }
+    .beneficios .card_beneficios{
+        width: 50%;
+        align-content: center;
+    }
+
+    .card_beneficios img{
+        width: 70%;
+        height: 120px;
+    }
+    .reservas .form_container form .form_control input[type="email"]{
+        width: 300px;
+    }
+    .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3{
+        width: 60%;
+    }
+    .reservas .form_container{
+        width: 100%;
+    }
+    .reservas{
+        width: 90%;
+        margin: 10px;
+    }
+}
+
+@media (max-width:450px){
+    .reservas{
+        padding: 0;
+        margin: 0;
+        align-items: start;
+        justify-content: start;
+    }
+    .reservas .form_container{
+        width: 100%;
+    }
+}

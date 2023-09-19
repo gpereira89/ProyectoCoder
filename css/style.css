@@ -1,1557 +1,1362 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
 @font-face {
-    font-family: "Jingle Star";
-    src: url(../fonts/Jingle\ Star.ttf);
+  font-family: "Jingle Star";
+  src: url(../fonts/Jingle\ Star.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
-*{
-    margin: 0;
-    padding:0;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+body {
+  background-color: rgb(241, 248, 249);
 }
-
-body{
-    background-color: rgb(241, 248, 249);   
-    }
 
 /* Estilos Navbar */
-.logo_container img{
-    width: 150px;
-    }
-
-.encabezado{
-    z-index: 100;
-    width: 100%;
-    /* height: auto; */
-    align-items: start;
-    justify-content: space-between;
-    font-weight: bold;   
-    padding-right: 60px;
-    }
-    
-.navbar-collapse li{
-    width: auto;
-    padding: 30px; 
-    font-weight: bold;
-    font-size: medium;
+.encabezado {
+  z-index: 100;
+  width: 100%;
+  /* height: auto; */
+  align-items: start;
+  justify-content: space-between;
+  font-weight: bold;
+  padding-right: 60px;
 }
-
-.navbar_personal{
-    background-color: rgb(239, 248, 249)
+.encabezado .logo_container img {
+  width: 150px;
 }
-
+.encabezado .navbar-collapse li {
+  width: auto;
+  padding: 25px;
+  font-weight: bold;
+  font-size: medium;
+}
 
 /* pseudoclase Hover */
 .navbar-nav .nav-item a:hover, .navbar-nav .nav-item a:active {
-    background-color:rgba(3, 3, 141, 0.116);
-    font-weight: 600;
+  background-color: rgba(3, 3, 141, 0.116);
+  font-weight: 600;
 }
 
 /* Estilo RRSS */
-.rrss{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    
+.rrss {
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
-
-.rrss i{
-    font-size: 30px;
-    transition: all ease 500ms;
+.rrss .instagram {
+  color: blueviolet;
 }
-.rrss i:hover{
-transform: scale(1.2);
+.rrss .whatsapp {
+  color: green;
 }
-
-.instagram{
-    color: blueviolet;
+.rrss i {
+  font-size: 30px;
+  transition: all ease 500ms;
 }
-.whatsapp{
-    color: green;
+.rrss i:hover {
+  transform: scale(1.2);
 }
 
 /* Estilos Institucional */
-.institucional{
-    padding-bottom: 20px;
-    width: 100%;
+.institucional {
+  padding-bottom: 20px;
+  width: 100%;
 }
 
-.contenido h1{ 
-    font-size: 30px;
-    font-family:"Jingle Star", cursive;
-    color: rgba(41, 41, 157, 0.807);
-    display: flex;
-    align-items: start;
-    justify-content: start;
+.contenido h1 {
+  font-size: 30px;
+  font-family: "Jingle Star", cursive;
+  color: rgba(41, 41, 157, 0.807);
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
 
-.contenido h2{ 
-    font-size: 20px;
-    font-weight: 700;
-    color: rgba(22, 14, 14, 0.816);
-    display: flex;
-    align-items: start;
-    justify-content: start;
+.contenido h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(22, 14, 14, 0.816);
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
-
-
 
 /* Estilos Formulario reserva */
-
-.reservas{
-    width: 95%;
-    height: auto;
-    background-image: url(../img/ObeliscoBA.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 15px;
+.reservas {
+  width: 95%;
+  height: auto;
+  background-image: url(../img/ObeliscoBA.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
 }
-
-.form_container{
-    padding: 20px;
-    background-color: rgba(108, 108, 136, 0.511);
-    width: 50%;
-    height: auto;
+.reservas .form_container {
+  padding: 20px;
+  background-color: rgba(108, 108, 136, 0.511);
+  width: 50%;
+  height: auto;
 }
-
-.form_container form{
-    color: white;
-    font-weight: 700; 
+.reservas .form_container form {
+  color: white;
+  font-weight: 700;
 }
-
-.form_control input[type="text"]{
-    width: 300px;
+.reservas .form_container form .form_control input[type=text] {
+  width: 300px;
 }
-
-.form_control input[type="email"]{
-    width: 350px;
+.reservas .form_container form .form_control input[type=email] {
+  width: 350px;
 }
-
-textarea{
-    width: 400px;
-    height: 100px;
+.reservas .form_container form textarea {
+  width: 400px;
+  height: 100px;
 }
-
-.form_control label{
-    width: auto;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    font-size: large;
+.reservas .form_container form .form_control label {
+  width: auto;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: large;
 }
-
-.form_control .cantidad{
-    padding-bottom: 10px;
+.reservas .form_container form .form_control .cantidad {
+  padding-bottom: 10px;
 }
-
-.form_container h2{
-    font-family:"Jingle Star", cursive;
-    font-size: 30px;
-    color:aliceblue;
-    padding: 0;
-}
-
-.boton_reserva a{
-    padding-bottom: 20px;
+.reservas .form_container h2 {
+  font-family: "Jingle Star", cursive;
+  font-size: 30px;
+  color: aliceblue;
+  padding: 0;
 }
 
 /* Estilos sección Pasos */
-
-.container_pasos{
-    width: 100%;
-    padding: 0.5rem 1%;
-    display: grid;
-    gap: 0.75rem;
-    grid-template-rows: 50px 1fr;    
+.container_pasos {
+  width: 100%;
+  padding: 0.5rem 1%;
+  display: grid;
+  gap: 0.75rem;
+  grid-template-rows: 50px 1fr;
+}
+.container_pasos .encabezado_pasos {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.container_pasos .encabezado_pasos h2 {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  font-size: x-large;
+}
+.container_pasos .icon_pasos {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 160px;
+  padding-top: 30px;
+  padding-left: 20px;
+  grid-template-areas: "uno dos tres";
+}
+.container_pasos .icon_pasos .paso_1 {
+  border-radius: 5px 10px;
+  box-shadow: 1px 1px 5px black;
+  grid-area: uno;
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container_pasos .icon_pasos .paso_1 p {
+  width: 100%;
+  padding: 5px;
+  box-shadow: none;
+  font-size: small;
+  font-weight: 500;
+  place-items: center;
+}
+.container_pasos .icon_pasos .paso_2 {
+  border-radius: 5px 10px;
+  box-shadow: 1px 1px 5px black;
+  grid-area: dos;
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container_pasos .icon_pasos .paso_2 p {
+  width: 100%;
+  padding: 5px;
+  box-shadow: none;
+  font-size: small;
+  font-weight: 500;
+  place-items: center;
+}
+.container_pasos .icon_pasos .paso_3 {
+  border-radius: 5px 10px;
+  box-shadow: 1px 1px 5px black;
+  grid-area: tres;
+  width: 85%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container_pasos .icon_pasos .paso_3 p {
+  width: 100%;
+  padding: 5px;
+  box-shadow: none;
+  font-size: small;
+  font-weight: 500;
+  place-items: center;
 }
 
-.encabezado_pasos{
-    padding-bottom: 10px;
-    padding-top: 10px;
+.icon_pasos i {
+  font-size: xx-large;
 }
 
-.icon_pasos{
-    width: 100%;
-    display: grid;   
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 160px;
-    padding-top: 30px;
-    padding-left: 20px;
-    grid-template-areas: 
-    "uno dos tres";
-
-}
-
-.paso_1{
-    border-radius: 5px 10px;
-    box-shadow: 1px 1px 5px black;
-    grid-area: uno;
-    width: 85%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.paso_1 p, .paso_2 p, .paso_3 p{
-    width: 100%;
-    padding: 5px;
-    box-shadow: none;
-    font-size: small;
-    font-weight: 500;
-    place-items: center;
-    
-}
-
-.paso_2{
-    border-radius: 5px 10px;
-    box-shadow: 1px 1px 5px black;
-    grid-area: dos;
-    width: 85%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.paso_3{
-    border-radius: 5px 10px;
-    box-shadow: 1px 1px 5px black;
-    grid-area: tres;
-    width: 85%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container_pasos h2{
-    font-weight: bold;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: black;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    font-size: x-large;
-}
-
-.icon_pasos i{
-    font-size: xx-large;
-}
-
-.encabezado_pasos p{
-    margin-left: 10px;
-}
-
-.container_pasos h4{
-    font-weight: 900;
+.container_pasos h4 {
+  font-weight: 900;
 }
 
 /* Estilos sección top actividades */
-
 .top-actividades {
-    padding: 0.5rem 1%;
-    width: 100%;
-    background-color:rgba(226, 250, 250, 0.936);
-    gap: 0.75rem;
-    display: grid;
-    grid-template-rows: 50px 50px auto; 
-    margin-top: 20px;
+  padding: 0.5rem 1%;
+  width: 100%;
+  background-color: rgba(226, 250, 250, 0.936);
+  gap: 0.75rem;
+  display: grid;
+  grid-template-rows: 50px 50px auto;
+  margin-top: 20px;
+}
+.top-actividades h2 {
+  font-weight: bold;
+  font-size: x-large;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.top-actividades .top-actividades_container {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.top-actividades .top-actividades_container img {
+  width: auto;
+  height: 200px;
+  border-radius: 10px 25px;
+  margin: 10px;
 }
 
-.top-actividades h2, .beneficios h2 {
-        font-weight: bold;
-        font-size: x-large;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: black;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-    }
-
-.top-actividades_container{
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
+/* Estilos detalle servicios */
+.detalle_servicios p {
+  width: auto;
+  font-size: medium;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.top-actividades_container img{
-    width: 100%;
-    height: 200px;
-    border-radius: 10px 25px;
+.detalle_servicios h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bold;
 }
 
-.top-actividades_container img{
-    margin: 10px;
+.detalle_servicio {
+  width: 90%;
+  height: auto;
+  margin: 25px;
+  padding: 10px;
+  overflow-x: scroll;
 }
-
-.detalle_servicios p{
-    width: auto;
-    font-size: medium;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.detalle_servicios h1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    font-weight: bold;
-}
-.detalle_servicio{
-    width: 90%;
-    height: auto;
-    margin: 25px;
-    padding: 10px;
-    overflow-x: scroll;
-}
-
 
 /* Estilos Cards */
-
 .card {
-    width: 95%;
-    background-color: #f5f5f4c3;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
+  width: 95%;
+  background-color: rgba(245, 245, 244, 0.7647058824);
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.45);
 }
-
 .card img {
-    border-radius: 5px 5px 0 0;
-    width: 90%;
-    height: 200px;
-    object-fit: cover;
-    opacity: .65;
+  border-radius: 5px 5px 0 0;
+  width: 90%;
+  height: 200px;
+  object-fit: cover;
+  opacity: 0.65;
 }
-
 .card img:hover {
-    opacity: 1;
+  opacity: 1;
 }
-
 .card .card_title {
-    padding: 0 10px;
+  padding: 0 10px;
 }
-
-.card .card_title p {
-    font-size: .85rem;
-    font-style: oblique;
-    text-transform: capitalize;
-}
-
 .card .card_container {
-    width: 100%;
-    padding: 10px;
-    font-size: .80rem;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }
-
 .card .card_container a.boton_descubrir {
-    margin-top: 10px;
-    width: 110px;
-    align-self: flex-end;
+  margin-top: 10px;
+  width: 110px;
+  align-self: flex-end;
 }
 
 /* Estilos sección beneficios */
- 
-.beneficios{
-    width: 100%;
-    padding: 1rem 1%;
-    display: grid;
-    grid-template-rows: 100px auto; 
-    background-color:azure;
+.beneficios {
+  width: 100%;
+  padding: 1rem 1%;
+  display: grid;
+  grid-template-rows: 100px auto;
+  background-color: azure;
 }
-
-.beneficios_container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 25px;
-    place-items: center;
+.beneficios h2 {
+  font-weight: bold;
+  font-size: x-large;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.beneficios .beneficios_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 25px;
+  place-items: center;
 }
 
 .card_beneficios {
-    width: 50%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    background-color: #f5f5f4c3;
-    padding-top: 20px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, .45);
-    flex-flow: column wrap;
-    gap: 10px;
+  width: 50%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  background-color: rgba(245, 245, 244, 0.7647058824);
+  padding-top: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.45);
+  flex-flow: column wrap;
+  gap: 10px;
 }
-
 .card_beneficios img {
-    border-radius: 5px 5px 0 0;
-    width: 50%;
-    height: 130px;
-    opacity: .75;
+  border-radius: 5px 5px 0 0;
+  width: 50%;
+  height: 130px;
+  opacity: 0.75;
 }
-
 .card_beneficios .card_title {
-    padding: 0 5px;
+  padding: 0 5px;
 }
-
 .card_beneficios .card_title h5 {
-    font-size: 1rem;
-    font-weight: bold;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 /* Estilos sección Reseñas */
-.resenas img{
-    width: 370px;
-    height: 230px;
-    padding: 20px;
+.resenas {
+  width: 100%;
+  padding: 1rem 1%;
+  display: grid;
+  grid-template-rows: 100px 50px auto;
 }
-
-.resenas h2, .form_viajero h2{
-    font-weight: bold;
-    padding-top: 20px;
-    color: black;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    width: 100%;
-    font-size: x-large;
+.resenas h2 {
+  font-weight: bold;
+  padding-top: 20px;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  font-size: x-large;
 }
-.resenas .cinco_estrellas{
-width: 100%;
-display: flex;
-align-items: center;
-justify-content: center;
-color:gold;
-
+.resenas .cinco_estrellas {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gold;
+  padding-bottom: 20px;
 }
-
-.resenas i{
-    padding: 10px;
-    font-size:xx-large;
+.resenas .cinco_estrellas i {
+  padding: 10px;
+  font-size: xx-large;
 }
-
-.resenas{
-    width: 100%;
-    padding: 1rem 1%;
-    display: grid;
-    grid-template-rows: 100px 50px auto;
+.resenas .imagenes_resenas {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
 }
-
-.cinco_estrellas{
-    padding-bottom: 20px;
-}
-
-.imagenes_resenas{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+.resenas .imagenes_resenas img {
+  width: 370px;
+  height: 230px;
+  padding: 20px;
 }
 
 /* Estilos sección viajero frecuente */
-    
-    .form_viajero{
-        width: 100%;
-        padding: 1rem 1%;
-        padding-bottom: 30px;
-        display: grid;
-        grid-template-rows: 80px 40px auto;
-        background-color: rgba(240, 233, 233, 0.238);
-    }
-    
-    .form_control_viajero label{
-        font-size:medium;
-        color: black;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        padding-left: 5px;
-        padding-right: 25px;
-        font-weight: bold;
-    }
-    .form_control_viajero input{
-    width: 450px;
-    height: auto;
-    }
-
-    .viajero_frecuente{
-        width: 100%;
-        display: flex;
-    }
-    
-    .form_control_submit{
-        margin-top: 15px;
-    }
-
+.form_viajero {
+  width: 100%;
+  padding: 1rem 1%;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-rows: 80px 40px auto;
+  background-color: rgba(240, 233, 233, 0.238);
+}
+.form_viajero h2 {
+  font-weight: bold;
+  padding-top: 20px;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 100%;
+  font-size: x-large;
+}
+.form_viajero .viajero_frecuente {
+  width: 100%;
+  display: flex;
+}
+.form_viajero .viajero_frecuente .form_control_viajero label {
+  font-size: medium;
+  color: black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 25px;
+  font-weight: bold;
+}
+.form_viajero .viajero_frecuente .form_control_viajero input {
+  width: 450px;
+  height: auto;
+}
+.form_viajero .viajero_frecuente .form_control_submit {
+  margin-top: 15px;
+}
 
 /* Estilos sección footer */
-.pie{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.navegacion_nav {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.navegacion_nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
-.rrss_footer{
-    padding-bottom:20px;
-    padding-left: 40px;
+.pie {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.rrss_footer i{
-    text-decoration: none;
-    font-size: 40px;
-    transition: all ease 500ms;
+.pie .rrss_footer {
+  padding-bottom: 20px;
+  padding-left: 40px;
 }
-.rrss_footer i:hover{
-transform: scale(1.2);
+.pie .rrss_footer .instagram {
+  color: blueviolet;
 }
-
-.navegacion_nav{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+.pie .rrss_footer .whatsapp {
+  color: green;
 }
-
-.navegacion_nav a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+.pie .rrss_footer i {
+  text-decoration: none;
+  font-size: 40px;
+  transition: all ease 500ms;
+}
+.pie .rrss_footer i:hover {
+  transform: scale(1.2);
 }
 
 /* botones */
 .boton_descubrir {
-    width: auto;
-    color: #333;
-    background-color: #e0e0869d;
+  width: auto;
+  color: #333;
+  background-color: rgba(224, 224, 134, 0.6156862745);
 }
 
 .boton-submit {
-    background-color:rgb(170, 211, 197);
-    font-weight: 400;
-    width: auto;
+  background-color: rgb(170, 211, 197);
+  font-weight: 400;
+  width: auto;
 }
 
 /* Página Servicios */
+.contenido_servicios {
+  width: 100%;
+  display: grid;
+}
+.contenido_servicios h1 {
+  font-size: 30px;
+  font-family: "Jingle Star", cursive;
+  color: rgba(41, 41, 157, 0.807);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
 
 /* Sección embudo */
-.embudo{
-    width: 95%;
-    height: 600px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-image: url(../img/Obelisco3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 10px 20px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
+.embudo {
+  width: 95%;
+  height: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url(../img/Obelisco3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px 20px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-.embudo h2{
-    width: 100%;
-    font-size: xxx-large;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    padding-left: 10px;
+.embudo h2 {
+  width: 100%;
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-left: 10px;
+  color: whitesmoke;
+  font-weight: bold;
+  padding-right: 5px;
 }
-
-.boton_reserva{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 70px;
+.embudo .boton_reserva {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
 }
-
-.boton_reserva button{
-    width: 100%;
-    font-size: xxx-large;
+.embudo .boton_reserva button {
+  width: 100%;
+  font-size: xxx-large;
 }
-
-.texto_embudo{
-    color: whitesmoke;
-    width: 100%;
-    font-weight: bold;
-    padding-left: 10px;
-    padding-right: 5px;
-    font-size: xx-large;
-}
-
-
 
 /* Sección actividades */
-.contenido_servicios{
-    width: 100%;
-    display: grid;
-}
-
-.imagenes_turisticas{
-    padding: 15px;
-}
-
-.contenido_servicios h1{ 
-    font-size: 30px;
-    font-family:"Jingle Star", cursive;
-    color: rgba(41, 41, 157, 0.807);
-    display: flex;
-    align-items: start;
-    justify-content: center;
-}
-
-
 .actividades {
-    padding: 0.5rem 1%;
-    width: 100%;
-    background-color:rgba(226, 250, 250, 0.936);
-    gap: 0.75rem;
-    display: grid;
-    grid-template-rows: 50px 50px auto; 
+  padding: 0.5rem 1%;
+  width: 100%;
+  background-color: rgba(226, 250, 250, 0.936);
+  gap: 0.75rem;
+  display: grid;
+  grid-template-rows: 50px 50px auto;
+}
+.actividades h2 {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.actividades .intro {
+  margin-top: 15px;
 }
 
-.actividades h2, .imagenes_turisticas h2 {
-        font-weight: bold;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: black;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-    }
-
-.actividades_container{
-    width: auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    margin-left: 10px;
-    margin-bottom: 20px;
+.actividades_container {
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
-
-.actividades_container img{
-    width: auto;
-    height: 200px;
-    border-radius: 5px 10px;
+.actividades_container img {
+  width: auto;
+  height: 200px;
+  border-radius: 5px 10px;
+  margin: 10px;
 }
-
-.actividades_container img{
-    margin: 10px;
-}
-
-.intro{
-    margin-top: 15px;
-}
-
-.card_title h4{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    padding-top: 5px;
+.actividades_container .card_title h4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  padding-top: 5px;
 }
 
 /* Sección Galería de fotos */
-
-
-.card_galeria img{
-    width: 350px;
-    height: 300px;
+.imagenes_turisticas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.imagenes_turisticas h2 {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+.imagenes_turisticas .intro {
+  margin-top: 15px;
 }
 
-.card_galeria h4{
-    width: 80%;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-
+#carousel_galeria {
+  padding: 15px;
 }
 
-.galeria{
-    width: 100%;
-    display: grid;
-}
-.galeria_title{
-    width: 100%;
-    display: flex;
-    justify-content: start;
+.carousel-inner h5 {
+  font-weight: 900;
+  color: white;
+  font-size: x-large;
+  background: rgba(0, 0, 0, 0.384);
+  line-height: 1em;
 }
 
-#carousel_galeria{
-    padding: 15px;
+.carousel-inner img {
+  width: 60%;
+  height: 650px;
+  padding: 20px 15px;
 }
 
 /* Página Preguntas */
-
-.contenido_preg h1{ 
-    font-size: 30px;
-    font-family:"Jingle Star", cursive;
-    color: rgba(41, 41, 157, 0.807);
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    padding-bottom: 20px;
+.contenido_preg h1 {
+  font-size: 30px;
+  font-family: "Jingle Star", cursive;
+  color: rgba(41, 41, 157, 0.807);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
-.accordion-header button{
-    font-weight: bold;
-    font-size: large;
+.accordion-header button {
+  font-weight: bold;
+  font-size: large;
 }
 
-.contenido_preg{
-    padding: 15px;
+.contenido_preg {
+  padding: 15px;
 }
 
 .contacto {
-    width: 100%;
-    padding-top: 40px;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: start;
-    align-items: center;
+  width: 100%;
+  padding-top: 40px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: start;
+  align-items: center;
 }
 
-.contacto_web{
-    width: 100%;
-    display:flex;
-    padding-bottom: 20px;
+.contacto_web {
+  width: 100%;
+  display: flex;
+  padding-bottom: 20px;
 }
 
-.contacto_whatsapp{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.contacto_whatsapp {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-
-.contacto p{
-    font-size: x-large;
-    padding-bottom: 20px;
+.contacto p {
+  font-size: x-large;
+  padding-bottom: 20px;
 }
 
-.contacto button{
-    font-size: x-large;
+.contacto button {
+  font-size: x-large;
 }
 
-.boton_whatsapp_contacto i{
-    width: 100%;
-    font-size:xxx-large;
-    margin-bottom: 20px;
+.boton_whatsapp_contacto i {
+  width: 100%;
+  font-size: xxx-large;
+  margin-bottom: 20px;
 }
-
 
 /* Página Guía turística */
-
-.contenido_guia h1{ 
-    font-size: 30px;
-    font-family:"Jingle Star", cursive;
-    color: rgba(41, 41, 157, 0.807);
-    display: flex;
-    align-items: start;
-    justify-content: center;
+.contenido_guia h1 {
+  font-size: 30px;
+  font-family: "Jingle Star", cursive;
+  color: rgba(41, 41, 157, 0.807);
+  display: flex;
+  align-items: start;
+  justify-content: center;
 }
 
 /* Sección Imperdibles */
 .imperdibles {
-    padding: 0.5rem 1%;
-    width: 100%;
-    background-color:rgba(226, 250, 250, 0.936);
-    gap: 0.75rem;
-    display: grid;
-    grid-template-rows: 50px auto; 
+  padding: 0.5rem 1%;
+  width: 100%;
+  background-color: rgba(226, 250, 250, 0.936);
+  gap: 0.75rem;
+  display: grid;
+  grid-template-rows: 50px auto;
 }
 
-.imperdibles h2{
-        font-weight: bold;
-        font-size: x-large;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: black;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-    }
+.imperdibles h2 {
+  font-weight: bold;
+  font-size: x-large;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
 
-.card_title h4{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
+.card_title h4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
 
 /* Imperdibles carrusel */
-.carousel-inner img{
-    width: auto;
-    height: 650px;
-    padding: 20px 15px;
+.carousel-inner img {
+  width: auto;
+  height: 650px;
+  padding: 20px 15px;
 }
 
-.carousel-inner h5{
-    font-weight: 900;
-    color:white;
-    font-size: x-large;
-    background: rgba(0, 0, 0, 0.384);
-    line-height: 1em;
+.carousel-inner h5 {
+  font-weight: 900;
+  color: white;
+  font-size: x-large;
+  background: rgba(0, 0, 0, 0.384);
+  line-height: 1em;
 }
 
-.carousel-inner p{
-    font-weight: 700;
-    color:white;
-    font-size:large;
-    background: rgba(0, 0, 0, 0.384);
+.carousel-inner p {
+  font-weight: 700;
+  color: white;
+  font-size: large;
+  background: rgba(0, 0, 0, 0.384);
 }
-
 
 /* Sección recomendados */
 .recomendados {
-    padding: 0.5rem 1%;
-    width: 100%;
-    background-color:rgba(226, 250, 250, 0.936);
-    gap: 0.75rem;
-    display: grid;
-    grid-template-rows: 50px auto; 
+  padding: 0.5rem 1%;
+  width: 100%;
+  background-color: rgba(226, 250, 250, 0.936);
+  gap: 0.75rem;
+  display: grid;
+  grid-template-rows: 50px auto;
 }
 
-.recomendados h2, .lugares h2{
-        font-weight: bold;
-        font-size: x-large;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        color: black;
-        display: flex;
-        align-items: start;
-        justify-content: start;
-    }
-
-.recomendados_container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    margin-bottom: 20px;
+.recomendados h2, .lugares h2 {
+  font-weight: bold;
+  font-size: x-large;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: black;
+  display: flex;
+  align-items: start;
+  justify-content: start;
 }
 
-.recomendados_container img{
-    width: auto;
-    height: 200px;
-    border-radius: 10px 25px;
+.recomendados_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
-.recomendados_container img{
-    margin: 15px;
+.recomendados_container img {
+  width: auto;
+  height: 200px;
+  border-radius: 10px 25px;
 }
 
-.recomendados p{
-    font-size: large;
-    margin-top: 5px;
-    margin-bottom: 20px;
+.recomendados_container img {
+  margin: 15px;
 }
 
-.card_title h4{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
+.recomendados p {
+  font-size: large;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.card_title h4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
 
 /* Sección Disfruta los mejores lugares de Argentina */
-
 .lugares {
-    padding: 0.5rem 1%;
-    width: 100%;
-    background-color:rgba(226, 250, 250, 0.936);
-    gap: 0.75rem;
-    display: grid;
-    grid-template-rows: 50px auto; 
+  padding: 0.5rem 1%;
+  width: 100%;
+  background-color: rgba(226, 250, 250, 0.936);
+  gap: 0.75rem;
+  display: grid;
+  grid-template-rows: 50px auto;
 }
 
-.lugares iframe{
-    width: auto;
-    padding-bottom: 10px;
+.lugares iframe {
+  width: auto;
+  padding-bottom: 10px;
 }
 
-.videos_container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding-top: 20px;
+.videos_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 20px;
 }
-
 
 /* Página Contacto */
-
-.nombre_pag h1{
-    font-size: 30px;
-    font-family:"Jingle Star", cursive;
-    color: rgba(41, 41, 157, 0.807);
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    padding-bottom: 20px;
+.nombre_pag h1 {
+  font-size: 30px;
+  font-family: "Jingle Star", cursive;
+  color: rgba(41, 41, 157, 0.807);
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
-
-.dudas{
-    width: 100%;
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.dudas {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.redes i{
-    width: 100%;
-    font-size:xxx-large;
-    margin-bottom: 20px;
+.redes i {
+  width: 100%;
+  font-size: xxx-large;
+  margin-bottom: 20px;
 }
 
-.redes{
-    width: 100%;
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.redes {
+  width: 100%;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.redes_logos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
+.redes_logos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 
-.redes_texto h2, .preguntas h2{
-    width: 100%
-    display flex;
-    justify-content: start;
-    align-items: center;
+.redes_texto h2, .preguntas h2 {
+  width: 100% display flex;
+  justify-content: start;
+  align-items: center;
 }
 
-.preguntas{
-    padding-bottom: 20px;
-    padding-top: 15px;
+.preguntas {
+  padding-bottom: 20px;
+  padding-top: 15px;
 }
 
-.preguntas button{
-    width: 80%;
-    margin-left: 15px;
-    font-size: x-large;
-    background-color:rgba(101, 99, 99, 0.825);
+.preguntas button {
+  width: 80%;
+  margin-left: 15px;
+  font-size: x-large;
+  background-color: rgba(101, 99, 99, 0.825);
 }
 
-.contenido{
-    padding-left: 20px;
+.contenido {
+  padding-left: 20px;
 }
 
-.form_container_contacto h3{
-    padding-bottom: 25px;
-    font-weight: bold;
+.form_container_contacto h3 {
+  padding-bottom: 25px;
+  font-weight: bold;
 }
 
-.contactanos{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.contactanos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-
-.form_container_contacto{
-    width: 60%;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: rgba(128, 128, 128, 0.297);
-    padding-left: 20px;
-    border-radius: 20px 15px;
-    display: flex;
-    flex-direction: column;
+.form_container_contacto {
+  width: 60%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: rgba(128, 128, 128, 0.297);
+  padding-left: 20px;
+  border-radius: 20px 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-.form_control_contacto{
-    padding-bottom: 15px;
+.form_control_contacto {
+  padding-bottom: 15px;
 }
 
-.form_control_contacto input[type="text"]{
-    width: 300px;
+.form_control_contacto input[type=text] {
+  width: 300px;
 }
 
-.form_control_contacto input[type="email"]{
-    width: 350px;
+.form_control_contacto input[type=email] {
+  width: 350px;
 }
 
-.form_control_contacto input[type="submit"], .form_control_contacto input[type="reset"]{
-    width: 110px;
-    height: 40px;
-    font-weight: bold;
-    font-size: medium;
-    background-color: rgba(98, 98, 203, 0.242);
+.form_control_contacto input[type=submit], .form_control_contacto input[type=reset] {
+  width: 110px;
+  height: 40px;
+  font-weight: bold;
+  font-size: medium;
+  background-color: rgba(98, 98, 203, 0.242);
 }
 
-.form_control_contacto input[type="submit"]:hover{
-    background-color: rgba(0, 0, 255, 0.563);
+.form_control_contacto input[type=submit]:hover {
+  background-color: rgba(0, 0, 255, 0.563);
 }
 
-.form_control_contacto input[type="reset"]:hover{
-    background-color: rgba(0, 0, 255, 0.563);
+.form_control_contacto input[type=reset]:hover {
+  background-color: rgba(0, 0, 255, 0.563);
 }
 
-.form_control_contacto label{
-    padding-right: 10px;
-    padding-bottom: 10px;
-    font-size: medium;
-    font-weight: bold;
+.form_control_contacto label {
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: medium;
+  font-weight: bold;
 }
 
-.form_control .cantidad{
-    padding-bottom: 10px;
+.form_control .cantidad {
+  padding-bottom: 10px;
 }
-
 
 /* Media queries */
-
-@media (max-width:1100px){
-    .navbar-collapse li{
-        padding: 10px;
-    }
-
-    .imagenes_resenas{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .form_container{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        top:10%;
-        left: 10%;
-    }
-    .reservas{
-        height: auto;
-    }
-
-    .embudo h2{
-        font-size: xx-large;
-    }
-    .embudo{
-        height: 400px;
-    }
-    .boton_reserva button{
-        font-size: xx-large;
-    }
-    .card_beneficios{
-        width: 85%;
-    }
-    .card_beneficios .card_title h5 {
-        font-size: 1rem;
-    }
-    .contactanos{
-        padding: 15px;
-    }
-    .dudas{
-        padding: 15px;
-    }
+@media (max-width: 1100px) {
+  .encabezado .navbar-collapse li {
+    padding: 10px;
+  }
+  .resenas .imagenes_resenas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .reservas .form_container {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    top: 10%;
+    left: 10%;
+  }
+  .reservas {
+    height: auto;
+  }
+  .embudo h2 {
+    font-size: xx-large;
+  }
+  .embudo {
+    height: 400px;
+  }
+  .embudo .boton_reserva button {
+    font-size: xx-large;
+  }
+  .card_beneficios {
+    width: 85%;
+  }
+  .contactanos {
+    padding: 15px;
+  }
+  .dudas {
+    padding: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .encabezado .navbar-collapse li {
+    padding: 5px;
+  }
+  .carousel-inner img {
+    height: 600px;
+  }
+  .videos_container {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 15px;
+  }
+  .lugares iframe {
+    width: 90%;
+  }
+  .recomendados_container {
+    width: 95%;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 20px;
+  }
+}
+@media (max-width: 850px) {
+  .actividades_container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    margin-left: 0;
+  }
+  .actividades h2 {
+    justify-content: center;
+  }
+  .actividades p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .actividades {
+    padding: 15px;
+  }
+  .imagenes_turisticas h2 {
+    justify-content: center;
+  }
+  .imagenes_turisticas p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: scroll;
+  }
+  .actividades {
+    padding: 15px;
+  }
+  .beneficios h2 {
+    justify-content: center;
+  }
+  .recomendados {
+    place-items: center;
+  }
+  .imperdibles {
+    place-items: center;
+    padding-top: 15px;
+  }
+  .lugares {
+    place-items: center;
+  }
+  .reservas .form_container {
+    width: 90%;
+  }
+  .container_pasos .encabezado_pasos h2 {
+    justify-content: center;
+  }
+  .top-actividades h2 {
+    justify-content: center;
+  }
+  .top-actividades p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .beneficios h2 {
+    place-items: center;
+  }
+  .resenas h2 {
+    justify-content: center;
+  }
+  .form_viajero h2 {
+    justify-content: center;
+  }
+  .form_viajero p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .top-actividades .top-actividades_container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 15px;
+    margin-left: 0;
+    gap: 20px;
+  }
+  .institucional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .contenido .slogan {
+    font-size: medium;
+  }
+  .contenido h1 {
+    font-size: 25px;
+  }
+  .contenido h2 {
+    font-size: 20px;
+  }
+  .reservas .form_container {
+    width: auto;
+    left: 5%;
+  }
+  .reservas {
+    width: auto;
+  }
+  .container_pasos .icon_pasos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3 {
+    width: 50%;
+    height: 150px;
+    padding: 5px;
+  }
+  .beneficios .beneficios_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  .beneficios .card_beneficios {
+    width: 40%;
+  }
+  .card_beneficios img {
+    width: 65%;
+    height: 150px;
+  }
+  .resena .imagenes_resenas {
+    justify-content: center;
+    align-items: center;
+  }
+  .navegacion_nav {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+  .pie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    place-items: center;
+  }
+  .contacto_web {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .boton_whatsapp_contacto i {
+    font-size: xxx-large;
+    margin-bottom: 10px;
+  }
+  .contacto p {
+    padding-bottom: 5px;
+  }
+  .contacto {
+    padding-bottom: 10px;
+  }
+  .contacto_whatsapp {
+    flex-direction: column;
+    padding: 0;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-inner p {
+    font-size: small;
+  }
+  .recomendados_container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    gap: 20px;
+  }
+  .videos_container {
+    place-items: center;
+  }
+  .lugares iframe {
+    width: auto;
+  }
+  .contactanos {
+    width: auto;
+  }
+  .form_container_contacto {
+    width: auto;
+    padding: 15px;
+  }
+  .form_control_contacto {
+    width: 100%;
+  }
+  .form_control_contacto label {
+    width: 100%;
+  }
+  .form_control_contacto input[type=text] {
+    width: 100%;
+  }
+  .form_control_contacto input[type=email] {
+    width: 100%;
+  }
+  #observaciones_contacto {
+    width: 100%;
+  }
+  .preguntas h2 {
+    font-size: large;
+  }
+  .redes_texto h2 {
+    font-size: medium;
+  }
+  .contactanos h3 {
+    font-size: large;
+  }
+  .form_viajero .viajero_frecuente .form_control_viajero input {
+    width: 350px;
+  }
+  .form_viajero .viajero_frecuente .form_control_viajero label {
+    font-size: small;
+  }
+}
+@media (max-width: 645px) {
+  .videos_container {
+    grid-template-columns: 1fr;
+  }
+  .reservas .form_container form .form_control label {
+    width: 100%;
+    font-size: medium;
+  }
+}
+@media (max-width: 600px) {
+  .embudo h2 {
+    font-size: large;
+    padding-top: 30px;
+  }
+  .embudo {
+    height: 300px;
+    justify-content: start;
+  }
+  .embudo .boton_reserva button {
+    font-size: x-large;
+  }
+  .beneficios .card_beneficios {
+    width: 45%;
+  }
+  .card_beneficios img {
+    width: 65%;
+    height: 120px;
+  }
+  .recomendados_container {
+    grid-template-columns: 1fr;
+  }
+  .reservas #observaciones {
+    width: 300px;
+  }
+  .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3 {
+    width: 50%;
+    height: 170px;
+    padding: 5px;
+  }
+  .top-actividades .top-actividades_container {
+    padding: 0px;
+    gap: 10px;
+  }
+  .form_control_viajero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .top-actividades .top-actividades_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+  .reservas .form_container form {
+    font-weight: 500;
+    padding: 5px;
+  }
+  .reservas .form_container textarea {
+    width: 250px;
+    height: 80px;
+  }
+  .form_container_contacto {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .form_container_contacto {
+    width: auto;
+  }
+  .actividades_container {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .carousel-inner img {
+    height: 500px;
+  }
+  .carousel-inner h5 {
+    font-size: medium;
+  }
+  .carousel-inner p {
+    font-size: small;
+    font-weight: 500;
+  }
+  .recomendados_container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+  }
+  .beneficios .card_beneficios {
+    width: 50%;
+    align-content: center;
+  }
+  .card_beneficios img {
+    width: 70%;
+    height: 120px;
+  }
+  .reservas .form_container form .form_control input[type=email] {
+    width: 300px;
+  }
+  .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3 {
+    width: 60%;
+  }
+  .reservas .form_container {
+    width: 100%;
+  }
+  .reservas {
+    width: 90%;
+    margin: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .reservas {
+    padding: 0;
+    margin: 0;
+    align-items: start;
+    justify-content: start;
+  }
+  .reservas .form_container {
+    width: 100%;
+  }
 }
 
-@media (max-width:991px){
-    .navbar-collapse li{
-        padding: 5px;
-    }
-    .carousel-inner img{
-        height: 600px;
-    }
-    .videos_container{
-        grid-template-columns: repeat(2,1fr);
-        padding-left: 15px;
-    }
-    .lugares iframe{
-        width: 90%;
-    }
-    .recomendados_container{
-        width: 95%;
-        grid-template-columns: repeat(3, 1fr);
-        padding-left: 20px;
-    }
-}
-
-@media (max-width:850px){
-    .actividades_container{
-        grid-template-columns: repeat(2,1fr);
-        padding: 15px;
-        margin-left: 0;
-    }
-    .actividades h2{
-        justify-content: center;
-    }
-
-    .actividades p{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .actividades{
-        padding: 15px;
-    }
-    .imagenes_turisticas h2{
-        justify-content: center;
-    }
-    
-    .imagenes_turisticas p{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        overflow-x: scroll;
-    }
-    .actividades{
-        padding: 15px;
-    }
-    .beneficios h2{
-        justify-content: center;
-    }
-    .recomendados{
-        place-items: center;
-    }
-    .imperdibles{
-        place-items: center;
-        padding-top: 15px;
-    }
-    .lugares{
-        place-items: center;
-    }
-    .reservas .form_container{
-        width: 90%;
-    }
-    .container_pasos h2{
-        justify-content: center;
-    }
-    .top-actividades h2{
-        justify-content: center;
-    }
-    .top-actividades p{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .beneficios h2{
-        place-items: center;
-    }
-    .resenas h2{
-        justify-content: center;
-    }
-    .form_viajero h2{
-        justify-content: center;
-    }
-    .form_viajero p{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .top-actividades_container{
-        grid-template-columns: repeat(2,1fr);
-        padding: 15px;
-        margin-left: 0;
-        gap: 20px;
-    }
-    .institucional{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-@media (max-width:768px){
-    .contenido .slogan{
-        font-size: medium;
-    }
-
-    .contenido h1{
-        font-size: 25px;
-    }
-    .contenido h2{
-        font-size: 20px;
-    }
-    .form_container{
-        display: flex;
-        flex-direction: column;
-        width: auto;
-        height: auto;
-        top:10%;
-        left: 5%;
-    }
-    .reservas{
-        width: auto;
-    }
-
-    .icon_pasos{
-        display:flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
-    .paso_1, .paso_2, .paso_3{
-        width: 50%;
-        height: 150px;
-        padding: 5px;
-    }
-    .beneficios_container{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 20px;
-    }
-
-    .beneficios .card_beneficios{
-        width: 40%;
-    }
-
-    .card_beneficios img{
-        width: 65%;
-        height: 150px;
-    }
-
-    .imagenes_resenas{
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;        
-    }
-
-    .navegacion_nav{
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 10px;
-    }
-    .pie{
-        display:grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        place-items: center;
-    }
-    
-    .contacto_web{
-        flex-direction: column;
-        gap:0;
-        align-items: center;
-        justify-content: center;
-    }
-    .boton_whatsapp_contacto i{
-        font-size: xxx-large;
-        margin-bottom: 10px;
-    }
-    .contacto p{
-        padding-bottom: 5px;
-    }
-
-    .contacto{
-        padding-bottom: 10px;
-    }
-    .contacto_whatsapp{
-        flex-direction: column;
-        padding: 0;
-        gap: 0;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .carousel-inner p{
-        font-size:small;
-    }
-    .recomendados_container{
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        gap: 20px;
-    }
-      
-    .videos_container{
-        place-items: center;
-    }
-
-    .lugares iframe{
-        width: auto;
-    }
-
-    .contactanos{
-        width: auto;
-        
-    }
-    .form_container_contacto{
-        width: auto;
-        padding: 15px;
-    }  
-
-    .form_control_contacto{
-        width: 100%;
-    }
-
-    .form_control_contacto label{
-        width: 100%;
-    }
-
-    .form_control_contacto input[type="text"]{
-        width: 100%;
-    }
-    
-    .form_control_contacto input[type="email"]{
-        width: 100%;
-    }
-    
-    #observaciones_contacto{
-        width: 100%;
-    }
-
-    .preguntas h2{
-        font-size: large;
-    }
-
-    .redes_texto h2{
-        font-size: medium;
-    }
-
-    .contactanos h3{
-        font-size: large;
-    }
-
-    .card_galeria{
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-    }
-    .card_galeria img{
-        width: 300px;
-        height: 250px;
-        padding-bottom: 5px;
-    }
-    .card_galeria h4{
-        width: 100%;
-    }
-    .card_galeria p{
-        width: 100%;
-        overflow-x: scroll;
-    }
-
-    .form_control_viajero input{
-        width: 350px;
-    }
-    .form_control_viajero label{
-        font-size: small;
-    }
-}
-
-@media (max-width:742px){
-    .imagenes_turisticas{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-
-    }
-    .card_galeria img{
-        padding-bottom: 5px;
-    }
-    .card_galeria{
-        padding:15px;
-    }
-}
-
-@media (max-width:645px){
-    .videos_container{
-        grid-template-columns: 1fr;
-    }
-    .form_control label{
-        width: 100%;
-        font-size: medium;
-    }
-}
-
-@media (max-width:600px){
-    .embudo h2{
-        font-size: large;
-        font-weight: bold;
-    }
-    .embudo{
-        height: 300px;
-        justify-content: start;
-    }
-    .boton_reserva button{
-        font-size: x-large;
-    }
-    .texto_embudo{
-        padding-top: 30px;
-    }
-
-    .beneficios .card_beneficios{
-        width: 45%;
-    }
-
-    .card_beneficios img{
-        width: 65%;
-        height: 120px;
-    }
-    .recomendados_container{
-        grid-template-columns: 1fr;
-    }
-    .reservas #observaciones{
-        width: 300px;
-    }
-    .paso_1, .paso_2, .paso_3{
-        width: 50%;
-        height: 170px;
-        padding: 5px;
-    }
-    .top-actividades_container{
-        padding: 0px;
-        gap: 10px;
-    }
-    .form_control_viajero{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-}
-
-@media (max-width:480px){
-    .top-actividades_container{
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        gap: 20px;
-    }
-    .form_container form{
-        font-weight: 500; 
-        padding: 5px;
-    }
-    textarea{
-        width: 250px;
-        height: 80px;
-    }
-        
-    .form_container_contacto{
-        width: auto;
-        display: flex;
-        flex-direction: column;
-    }  
-    .form_container_contacto{
-        width: auto;
-    }
-    .actividades_container{
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-
-    .carousel-inner img{
-        height: 500px;
-    }
-    .carousel-inner h5{
-        font-size:medium;
-    }
-    
-    .carousel-inner p{
-        font-size:small;
-        font-weight: 500;
-    }
-    .recomendados_container{
-        grid-template-columns: 1fr;
-        width: 100%;
-        gap: 20px;
-    }
-    .beneficios .card_beneficios{
-        width: 50%;
-        align-content: center;
-    }
-
-    .card_beneficios img{
-        width: 70%;
-        height: 120px;
-    }
-    .form_control input[type="email"]{
-        width: 300px;
-    }
-    .paso_1, .paso_2, .paso_3{
-        width: 60%;
-    }
-    .reservas .form_container{
-        width: 100%;
-    }
-    .reservas{
-        width: 90%;
-        margin: 10px;
-    }
-}
-
-@media (max-width:450px){
-    .reservas{
-        padding: 0;
-        margin: 0;
-        align-items: start;
-        justify-content: start;
-    }
-    .reservas .form_container{
-        width: 100%;
-    }
-}
-
-@media (min-width:550px) and (max-width:742px){
-    .card_galeria{
-        padding-left:16px;
-    }
-}
-
-@media (min-width:481px) and (max-width:550px){
-    .card_galeria{
-        padding-left: 9px;
-    }
-}
-
-
-@media (max-width:768px){
-    #carousel_galeria{
-        display: none;
-    }
-}
-
-@media (min-width:769px){
-    .card_galeria{
-        display: none;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */
