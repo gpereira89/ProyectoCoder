@@ -1,22 +1,32 @@
 /* Media queries */
 
 @media (max-width:1100px){
-    .encabezado .navbar-collapse li{
-        padding: 10px;
-    }
+    .encabezado{
+        .navbar-collapse li{
+            padding: 10px;
+        }
+    } 
 
     .resenas .imagenes_resenas{
         display:flex;
         flex-direction: column;
         justify-content: space-between;
     }
+    .resenas .imagenes_resenas .card_resena{
+        height: 240px;
+    }
+    .resenas .imagenes_resenas .card_resena .nombre_usuario{
+        font-size: large;
+    }
+    .resenas .imagenes_resenas .card_resena .resena_usuario{
+        font-size: x-large;
+    }
+
     .reservas .form_container{
         display: flex;
         flex-direction: column;
         width: auto;
         height: auto;
-        top:10%;
-        left: 10%;
     }
     .reservas{
         height: auto;
@@ -32,42 +42,96 @@
         font-size: xx-large;
     }
     .card_beneficios{
-        width: 85%;
+        width: 75%;
+        height: 220px;
+
+        img{
+            width: 70%;
+            height: 150px;
+        }
+        .card_title h5{
+            font-size: small;
+        }
     }
-    .contactanos{
-        padding: 15px;
+    .icon_pasos i{
+        font-size: xx-large;
     }
-    .dudas{
-        padding: 15px;
+    .container_pasos h4{
+        font-size: large;
+    }
+    .container_pasos .icon_pasos .paso_1 p,.container_pasos .icon_pasos .paso_2 p, .container_pasos .icon_pasos .paso_3 p{
+        font-size: small;
     }
 }
 
 @media (max-width:992px){
-    .encabezado .navbar-collapse li{
+    .navbar-collapse li{
         padding: 5px;
     }
+
+    .navbar-collapse{
+        background-color: rgba(180, 201, 231, 0.06);
+        border-radius: 10px 10px;
+    }
+
+    .encabezado{
+        padding-left: 20px;
+        width: auto;
+    }
+
+    .logo_container img{
+        width: auto;
+        height: 200px;
+    }
+
     .carousel-inner img{
         height: 600px;
+        padding: 20px 0;
     }
-    .videos_container{
+    .lugares .videos_container{
         grid-template-columns: repeat(2,1fr);
-        padding-left: 15px;
     }
-    .lugares iframe{
-        width: 90%;
-    }
+
     .recomendados_container{
-        width: 95%;
         grid-template-columns: repeat(3, 1fr);
-        padding-left: 20px;
+    }
+    .container_pasos .icon_pasos .paso_1,.container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3{
+        width: 100%;
+    }
+}
+
+@media (max-width:893px){
+
+    .contactanos{
+        width: 100%;
+    }
+
+    .form_control_contacto{
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contactanos .form_container_contacto{
+        width: 100%;
+    }
+
+    .dudas .preguntas h2{
+        font-size: large;
+    }
+
+    .redes .redes_texto h2{
+        font-size: medium;
+    }
+    .actividades_container{
+        grid-template-columns: repeat(3,1fr);
     }
 }
 
 @media (max-width:850px){
     .actividades_container{
         grid-template-columns: repeat(2,1fr);
-        padding: 15px;
-        margin-left: 0;
+        padding-top: 10px;
+        
     }
     .actividades h2{
         justify-content: center;
@@ -79,7 +143,8 @@
         justify-content: center;
     }
     .actividades{
-        padding: 15px;
+        padding-top: 10px;
+        padding-bottom: 15px;
     }
     .imagenes_turisticas h2{
         justify-content: center;
@@ -100,15 +165,26 @@
     .recomendados{
         place-items: center;
     }
+    .lugares{
+        place-items: center;
+    }
     .imperdibles{
         place-items: center;
         padding-top: 15px;
     }
-    .lugares{
-        place-items: center;
+    .carousel-inner img{
+        height: 500px;
+    }
+    .carousel-inner p{
+        font-size:small;
+        font-weight: 500;
+    }
+
+    .reservas{
+        width: 100%;
     }
     .reservas .form_container{
-        width: 90%;
+        width: auto;
     }
     .container_pasos .encabezado_pasos h2{
         justify-content: center;
@@ -122,11 +198,11 @@
         justify-content: center;
     }
 
-    .beneficios h2{
-        place-items: center;
-    }
     .resenas h2{
         justify-content: center;
+    }
+    .resenas{
+        padding: 0;
     }
     .form_viajero h2{
         justify-content: center;
@@ -162,17 +238,6 @@
     .contenido h2{
         font-size: 20px;
     }
-    .reservas .form_container{
-        // display: flex;
-        // flex-direction: column;
-        width: auto;
-        // height: auto;
-        // top:10%;
-        left: 5%;
-    }
-    .reservas{
-        width: auto;
-    }
 
     .container_pasos .icon_pasos{
         display:flex;
@@ -180,30 +245,42 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+        padding-left: 0;
     }
     .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3{
-        width: 50%;
-        height: 150px;
-        padding: 5px;
+        width: 100%;
+        height: 200px;
+        padding:15px 5px;
+        place-items: center;
     }
+
+    .icon_pasos i{
+        font-size: xxx-large;
+    }
+    .container_pasos h4{
+        font-size: x-large;
+    }
+    .container_pasos .icon_pasos .paso_1 p,.container_pasos .icon_pasos .paso_2 p, .container_pasos .icon_pasos .paso_3 p{
+        font-size: large;
+    }
+
     .beneficios .beneficios_container{
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         gap: 20px;
     }
 
     .beneficios .card_beneficios{
-        width: 40%;
+        width: 100%;
+        height: 350px;
     }
 
     .card_beneficios img{
-        width: 65%;
-        height: 150px;
+        padding: 20px 50px;
+        width: 60%;
+        height: 290px;
     }
-
-    .resena .imagenes_resenas{
-        justify-content: center;
-        align-items: center;        
+    .card_beneficios .card_title h5{
+        font-size: medium;
     }
 
     .navegacion_nav{
@@ -221,13 +298,13 @@
         place-items: center;
     }
     
-    .contacto_web{
+    .contacto .contacto_web{
         flex-direction: column;
         gap:0;
         align-items: center;
         justify-content: center;
     }
-    .boton_whatsapp_contacto i{
+    .contacto .contacto_whatsapp .boton_whatsapp_contacto i{
         font-size: xxx-large;
         margin-bottom: 10px;
     }
@@ -238,7 +315,7 @@
     .contacto{
         padding-bottom: 10px;
     }
-    .contacto_whatsapp{
+    .contacto .contacto_whatsapp{
         flex-direction: column;
         padding: 0;
         gap: 0;
@@ -246,66 +323,21 @@
         justify-content: center;
     }
 
-    .carousel-inner p{
-        font-size:small;
+    .carousel-inner h5{
+        font-size: medium;
     }
     .recomendados_container{
         grid-template-columns: repeat(2, 1fr);
-        width: 90%;
         gap: 20px;
     }
-      
-    .videos_container{
-        place-items: center;
-    }
 
-    .lugares iframe{
-        width: auto;
-    }
-
-    .contactanos{
-        width: auto;
-        
-    }
-    .form_container_contacto{
-        width: auto;
-        padding: 15px;
-    }  
-
-    .form_control_contacto{
-        width: 100%;
-    }
-
-    .form_control_contacto label{
-        width: 100%;
-    }
-
-    .form_control_contacto input[type="text"]{
-        width: 100%;
-    }
-    
-    .form_control_contacto input[type="email"]{
-        width: 100%;
-    }
-    
-    #observaciones_contacto{
-        width: 100%;
-    }
-
-    .preguntas h2{
-        font-size: large;
-    }
-
-    .redes_texto h2{
-        font-size: medium;
-    }
-
-    .contactanos h3{
+    .contactanos h4{
         font-size: large;
     }
 
     .form_viajero .viajero_frecuente .form_control_viajero input{
         width: 350px;
+        font-size: small;
     }
     .form_viajero .viajero_frecuente .form_control_viajero label{
         font-size: small;
@@ -313,9 +345,10 @@
 }
 
 @media (max-width:645px){
-    .videos_container{
+    .lugares .videos_container{
         grid-template-columns: 1fr;
     }
+
     .reservas .form_container form .form_control label{
         width: 100%;
         font-size: medium;
@@ -335,42 +368,52 @@
         font-size: x-large;
     }
 
-    .beneficios .card_beneficios{
-        width: 45%;
-    }
-
-    .card_beneficios img{
-        width: 65%;
-        height: 120px;
-    }
     .recomendados_container{
         grid-template-columns: 1fr;
+        place-items: center;
     }
     .reservas #observaciones{
         width: 300px;
     }
-    .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3{
-        width: 50%;
-        height: 170px;
-        padding: 5px;
-    }
+
     .top-actividades .top-actividades_container{
         padding: 0px;
         gap: 10px;
     }
+
+    .resenas .imagenes_resenas .card_resena{
+        height: 200px;
+    }
+    .resenas .imagenes_resenas .card_resena .nombre_usuario{
+        font-size: medium;
+    }
+    .resenas .imagenes_resenas .card_resena .resena_usuario{
+        font-size: large;
+    }
+
     .form_control_viajero{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
+    .carousel-inner img{
+        height: 400px;
+    }
 }
 
 @media (max-width:480px){
+    .navbar-collapse a{
+        font-size: small;
+    }
+
     .top-actividades .top-actividades_container{
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
         gap: 20px;
+        place-items: center;
+    }
+
+    .reservas .form_container{
+        justify-content: center;
     }
     .reservas .form_container form{
         font-weight: 500; 
@@ -380,68 +423,167 @@
         width: 250px;
         height: 80px;
     }
-        
-    .form_container_contacto{
-        width: auto;
-        display: flex;
-        flex-direction: column;
-    }  
-    .form_container_contacto{
-        width: auto;
-    }
+
     .actividades_container{
         grid-template-columns: 1fr;
         gap: 5px;
     }
-
-    .carousel-inner img{
-        height: 500px;
-    }
-    .carousel-inner h5{
-        font-size:medium;
-    }
     
-    .carousel-inner p{
-        font-size:small;
-        font-weight: 500;
-    }
-    .recomendados_container{
-        grid-template-columns: 1fr;
-        width: 100%;
-        gap: 20px;
-    }
-    .beneficios .card_beneficios{
-        width: 50%;
-        align-content: center;
-    }
-
-    .card_beneficios img{
-        width: 70%;
-        height: 120px;
-    }
     .reservas .form_container form .form_control input[type="email"]{
         width: 300px;
     }
-    .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3{
-        width: 60%;
-    }
+
     .reservas .form_container{
         width: 100%;
     }
-    .reservas{
-        width: 90%;
-        margin: 10px;
+    
+    .lugares h2, .recomendados h2, .imperdibles h2, .actividades h2, .imagenes_turisticas h2, .beneficios h2{
+        font-size: large;
+    }
+    .recomendados p, .actividades p, .imagenes_turisticas p{
+        font-size: small;
+    }
+    .carousel-inner h5{
+        font-size: small;
+    }
+    .carousel-inner p{
+        font-size: smaller;
+    }
+    .beneficios .card_beneficios{
+        width: 100%;
+        height: 200px;
+    }
+    .card_beneficios img{
+        padding: 0px 30px;
+        width: 60%;
+        height: 140px;
+    }
+    .card_beneficios .card_title h5{
+        font-size: smaller;
+    }
+    .contactanos .form_container_contacto{
+        padding: 0;
     }
 }
 
+
 @media (max-width:450px){
-    .reservas{
-        padding: 0;
-        margin: 0;
-        align-items: start;
-        justify-content: start;
-    }
+
     .reservas .form_container{
-        width: 100%;
+        padding: 2px;
     }
+    .form_control_contacto input{
+        font-size:smaller;
+    }
+    #observaciones_contacto{
+        font-size: smaller;
+    }
+
+    .resenas .imagenes_resenas .card_resena .nombre_usuario{
+        font-size: small;
+    }
+    .resenas .imagenes_resenas .card_resena .resena_usuario{
+        font-size: medium;
+    }
+    .resenas .imagenes_resenas .card_resena{
+        padding: 3px;
+    }
+
+    .contactanos .form_container_contacto h4{
+        font-size: small;
+        padding:15px 5px;
+    }
+    .logo_container img{
+        width: 100px;
+        height: 150px;
+        padding-left: 0;
+    }
+    .form_viajero .viajero_frecuente .form_control_viajero input{
+        width: 300px;
+    }
+}
+
+@media (max-width:380px){
+    .reservas .form_container form .form_control input[type="text"],.reservas .form_container form .form_control input[type="email"]{
+        width:250px;
+    }
+    .reservas .form_container form .form_control #observaciones{
+        width: 250px;
+    }
+    .form_control_contacto input[type=submit] {
+        width: 70px;
+        height: 40px;
+        font-weight: bold;
+        font-size: smaller;
+      }
+      .form_control_contacto input[type=reset] {
+        width: 70px;
+        height: 40px;
+        font-weight: bold;
+        font-size: smaller;
+      }
+      .resenas .imagenes_resenas .card_resena{
+        height: auto;
+    }
+    .resenas .cinco_estrellas i{
+        font-size: medium;
+    }
+    .resenas .imagenes_resenas .card_resena .nombre_usuario{
+        font-size: smaller;
+    }
+    .resenas .imagenes_resenas .card_resena .resena_usuario{
+        font-size: smaller;
+    }
+}
+
+@media (max-width:370px){
+    .carousel-inner p{
+        display: none;
+    }
+    .carousel-inner img{
+        height: 250px;
+    }
+
+    .card_beneficios img{
+        width: 75%;
+    }
+
+    .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3{
+        width: 100%;
+        height: 200px;
+        padding:15px 0px;
+    }
+
+    .icon_pasos i{
+        font-size: xx-large;
+    }
+    .container_pasos h4{
+        font-size: large;
+    }
+    .container_pasos .icon_pasos .paso_1 p,.container_pasos .icon_pasos .paso_2 p, .container_pasos .icon_pasos .paso_3 p{
+        font-size: medium;
+    }
+    .form_viajero .viajero_frecuente .form_control_viajero input{
+        font-size: smaller;
+        width: 220px;
+    }
+    .form_viajero .viajero_frecuente .form_control_viajero label{
+        font-size: smaller;
+    }
+    .form_viajero p{
+        font-size: smaller;
+    }
+}
+
+@media (max-width:320px){
+    .reservas .form_container form .form_control input[type="text"],.reservas .form_container form .form_control input[type="email"]{
+        width:200px;
+    }
+    .reservas .form_container form .form_control #observaciones{
+        width: 200px;
+    }
+    .form_container form .form_control select{
+        width: 200px;
+    }
+    
 }
