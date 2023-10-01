@@ -323,8 +323,7 @@ body {
 .card img:hover {
   opacity: 1;
 }
-.card .card_title {
-  font-size: medium;
+.card .card_title h4 {
   height: 10%;
   padding: 0 5px;
 }
@@ -1013,6 +1012,9 @@ body {
   .encabezado .navbar-collapse li {
     padding: 10px;
   }
+  .recomendados .recomendados_container .card_container {
+    height: 370px;
+  }
   .resenas .imagenes_resenas {
     display: flex;
     flex-direction: column;
@@ -1118,6 +1120,9 @@ body {
   }
   .actividades_container {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .card .card_title h4 {
+    font-size: medium;
   }
 }
 @media (max-width: 850px) {

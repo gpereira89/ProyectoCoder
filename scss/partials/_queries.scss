@@ -5,7 +5,11 @@
         .navbar-collapse li{
             padding: 10px;
         }
-    } 
+    }
+    
+    .recomendados .recomendados_container .card_container{
+        height:370px;
+    }
 
     .resenas .imagenes_resenas{
         display:flex;
@@ -127,6 +131,9 @@
     .actividades_container{
         grid-template-columns: repeat(3,1fr);
     }
+    .card .card_title h4{
+        font-size: medium;
+    }
 }
 
 @media (max-width:850px){
@@ -138,7 +145,6 @@
     .actividades h2{
         justify-content: center;
     }
-
     .actividades p{
         width: 100%;
         display: flex;
