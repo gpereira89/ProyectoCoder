@@ -171,6 +171,9 @@
     .recomendados{
         place-items: center;
     }
+    .recomendados_container p{
+        font-size: small;
+    }
     .lugares{
         place-items: center;
     }
@@ -339,6 +342,10 @@
     .recomendados_container{
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+
+        p{
+            font-size: medium;
+        }
     }
 
     .contactanos h4{
@@ -381,6 +388,13 @@
     .recomendados_container{
         grid-template-columns: 1fr;
         place-items: center;
+
+        p{
+            font-size: large;
+        }
+        h4{
+            font-size: x-large;
+        }
     }
     .reservas #observaciones{
         width: 300px;
@@ -463,9 +477,14 @@
     .lugares h2, .recomendados h2, .imperdibles h2, .actividades h2, .imagenes_turisticas h2, .beneficios h2{
         font-size: large;
     }
-    .recomendados p, .actividades p, .imagenes_turisticas p{
+    .recomendados .intro p, .actividades p, .imagenes_turisticas p{
         font-size: small;
     }
+
+    .recomendados .recomendados_container .card_container{
+        height:270px;
+    }
+
     .carousel-inner h5{
         font-size: small;
     }
@@ -552,13 +571,13 @@
       }
 
       .card .card_container{
-        height: 400px;
+        height: 300px;
     }
     .card .card_container p{
-        font-size: medium;
+        font-size: small;
     }
 
-      .resenas .imagenes_resenas .card_resena{
+    .resenas .imagenes_resenas .card_resena{
         height: auto;
     }
     .resenas .cinco_estrellas i{
