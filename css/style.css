@@ -278,7 +278,7 @@ body {
   width: auto;
   height: 200px;
   border-radius: 10px 25px;
-  margin: 10px;
+  padding: 10px;
 }
 
 /* Estilos detalle servicios */
@@ -295,13 +295,15 @@ body {
   justify-content: center;
   font-size: x-large;
   font-weight: bold;
+  padding: 15px;
+  margin: 15px;
 }
 
 .detalle_servicio {
   width: 90%;
   height: auto;
-  margin: 25px;
-  padding: 10px;
+  margin: 15px;
+  padding: 15px;
   overflow-x: scroll;
 }
 
@@ -314,7 +316,6 @@ body {
 }
 .card img {
   border-radius: 5px 5px 0 0;
-  width: 90%;
   height: 200px;
   object-fit: cover;
   opacity: 0.65;
@@ -323,10 +324,13 @@ body {
   opacity: 1;
 }
 .card .card_title {
-  padding: 0 10px;
+  font-size: medium;
+  height: 10%;
+  padding: 0 5px;
 }
 .card .card_container {
   width: 100%;
+  height: 350px;
   padding: 10px;
   font-size: 0.9rem;
   display: flex;
@@ -373,7 +377,7 @@ body {
   height: 270px;
   display: flex;
   align-items: center;
-  background-color: rgba(245, 245, 244, 0.7647058824);
+  background-color: rgba(250, 250, 238, 0.5254901961);
   padding-top: 20px;
   border-radius: 10px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.45);
@@ -442,6 +446,7 @@ body {
   box-shadow: 1px 1px 5px black;
   padding: 10px;
   box-sizing: border-box;
+  background-color: rgba(187, 208, 253, 0.214);
 }
 .resenas .imagenes_resenas .card_resena .nombre_usuario {
   font-weight: bold;
@@ -656,6 +661,8 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0.5rem 1%;
+  gap: 0, 75rem;
 }
 .imagenes_turisticas h2 {
   font-weight: bold;
@@ -758,9 +765,9 @@ body {
 
 /* Imperdibles carrusel */
 .carousel-inner img {
-  width: 95%;
-  height: 900px;
-  padding: 20px 35px;
+  width: auto;
+  height: 670px;
+  padding: 20px 100px;
 }
 
 .carousel-inner h5 {
@@ -812,7 +819,7 @@ body {
   margin: 10px;
 }
 
-.recomendados p {
+.recomendados p, .actividades p, .imagenes_turisticas p {
   font-size: large;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -880,9 +887,6 @@ body {
   place-items: center;
 }
 .dudas .preguntas h2 {
-  width: 100% display flex;
-  justify-content: start;
-  align-items: center;
   padding-bottom: 40px;
 }
 .dudas .preguntas .boton_preguntas {
@@ -899,7 +903,8 @@ body {
   align-items: center;
 }
 .redes .redes_texto h2 {
-  width: 100% display flex;
+  width: 100%;
+  display: flex;
   justify-content: start;
   align-items: center;
 }
@@ -1087,6 +1092,9 @@ body {
   .container_pasos .icon_pasos .paso_1, .container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3 {
     width: 100%;
   }
+  .card .card_container {
+    height: 400px;
+  }
 }
 @media (max-width: 893px) {
   .contactanos {
@@ -1125,6 +1133,9 @@ body {
   .actividades {
     padding-top: 10px;
     padding-bottom: 15px;
+  }
+  .card .card_container {
+    height: 240px;
   }
   .imagenes_turisticas h2 {
     justify-content: center;
@@ -1212,6 +1223,9 @@ body {
   }
   .contenido h2 {
     font-size: 20px;
+  }
+  .card .card_container {
+    height: 300px;
   }
   .container_pasos .icon_pasos {
     display: flex;
@@ -1339,6 +1353,12 @@ body {
     padding: 0px;
     gap: 10px;
   }
+  .card .card_container {
+    height: 350px;
+  }
+  .card .card_title {
+    font-size: medium;
+  }
   .resenas .imagenes_resenas .card_resena {
     height: 200px;
   }
@@ -1365,6 +1385,12 @@ body {
     grid-template-columns: 1fr;
     gap: 20px;
     place-items: center;
+  }
+  .card .card_container {
+    height: 380px;
+  }
+  .card .card_container p {
+    font-size: large;
   }
   .reservas .form_container {
     justify-content: center;
@@ -1446,6 +1472,12 @@ body {
   .form_viajero .viajero_frecuente .form_control_viajero input {
     width: 300px;
   }
+  .detalle_servicios h1 {
+    font-size: large;
+  }
+  .descripcion_servicio h1 {
+    padding: 15px;
+  }
 }
 @media (max-width: 380px) {
   .reservas .form_container form .form_control input[type=text], .reservas .form_container form .form_control input[type=email] {
@@ -1465,6 +1497,12 @@ body {
     height: 40px;
     font-weight: bold;
     font-size: smaller;
+  }
+  .card .card_container {
+    height: 400px;
+  }
+  .card .card_container p {
+    font-size: medium;
   }
   .resenas .imagenes_resenas .card_resena {
     height: auto;
@@ -1523,6 +1561,12 @@ body {
   }
   .form_container form .form_control select {
     width: 200px;
+  }
+  .card .card_container p {
+    font-size: small;
+  }
+  .card .card_title h4 {
+    font-size: small;
   }
 }
 

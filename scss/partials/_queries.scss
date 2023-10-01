@@ -68,7 +68,6 @@
     .navbar-collapse li{
         padding: 5px;
     }
-
     .navbar-collapse{
         background-color: rgba(180, 201, 231, 0.06);
         border-radius: 10px 10px;
@@ -97,6 +96,9 @@
     }
     .container_pasos .icon_pasos .paso_1,.container_pasos .icon_pasos .paso_2, .container_pasos .icon_pasos .paso_3{
         width: 100%;
+    }
+    .card .card_container{
+        height: 400px;
     }
 }
 
@@ -146,6 +148,10 @@
         padding-top: 10px;
         padding-bottom: 15px;
     }
+    .card .card_container{
+        height: 240px;
+    }
+
     .imagenes_turisticas h2{
         justify-content: center;
     }
@@ -237,6 +243,10 @@
     }
     .contenido h2{
         font-size: 20px;
+    }
+
+    .card .card_container{
+        height: 300px;
     }
 
     .container_pasos .icon_pasos{
@@ -381,6 +391,13 @@
         gap: 10px;
     }
 
+    .card .card_container{
+        height: 350px;
+    }
+    .card .card_title{
+        font-size: medium;
+    }
+
     .resenas .imagenes_resenas .card_resena{
         height: 200px;
     }
@@ -410,6 +427,12 @@
         grid-template-columns: 1fr;
         gap: 20px;
         place-items: center;
+    }
+    .card .card_container{
+        height: 380px;
+    }
+    .card .card_container p{
+        font-size: large;
     }
 
     .reservas .form_container{
@@ -466,7 +489,6 @@
     }
 }
 
-
 @media (max-width:450px){
 
     .reservas .form_container{
@@ -501,6 +523,12 @@
     .form_viajero .viajero_frecuente .form_control_viajero input{
         width: 300px;
     }
+    .detalle_servicios h1{
+        font-size: large;
+    }
+    .descripcion_servicio h1{
+        padding: 15px;
+    }
 }
 
 @media (max-width:380px){
@@ -522,6 +550,14 @@
         font-weight: bold;
         font-size: smaller;
       }
+
+      .card .card_container{
+        height: 400px;
+    }
+    .card .card_container p{
+        font-size: medium;
+    }
+
       .resenas .imagenes_resenas .card_resena{
         height: auto;
     }
@@ -585,5 +621,10 @@
     .form_container form .form_control select{
         width: 200px;
     }
-    
+    .card .card_container p{
+        font-size: small;
+    }
+    .card .card_title h4{
+        font-size: small;
+    }  
 }
